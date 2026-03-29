@@ -1,32 +1,24 @@
-# Weekly Check-In Report
-## Week 1 of 8 — 29 March 2026
-*Data period: 2026-03-22 to 2026-03-29*
-*Auto-generated from Hevy API — nutrition and sleep to be added manually or via MFP/Samsung automation*
+# Weekly Training Report — Week 1 of 8
+**Generated: 29 March 2026** | Period: 2026-03-22 → 2026-03-29
+*Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
 
-## ⚡ Quick Snapshot
+## ⚡ Priority Lifts — At a Glance
 
-| Metric | Target | Actual | Status |
+| Lift | W1 Target | Actual | Status |
 |---|---|---|---|
-| Training sessions | 5 | 8 | ✅ Hit target |
-| Total working sets | 99–122 | 83 | ❌ Below target |
-| Bench Press — Heavy | 65.0kg × 4×5 | No data | ❓ No data |
-| Bench Press — Volume | 55.0kg × 3×10 | No data | ❓ No data |
-| Weighted Pull Up | 5.0kg × 3×6 | 5.0kg × 3×8 | ✅ Hit target |
-| Daily protein (training) | 240g | ⏳ Add from MFP | — |
-| Daily calories (training) | ~2,900 kcal | ⏳ Add from MFP | — |
-| MFP logged days | 7 | ⏳ Add manually | — |
-| Sleep score avg | 78+ | ⏳ Add from Samsung | — |
-| Physical recovery avg | 80%+ | ⏳ Add from Samsung | — |
-| Body weight (7-day avg) | On track | ⏳ Add from Samsung | — |
-| Skeletal muscle | Trending up | ⏳ Add from Samsung | — |
+| Bench Press (Heavy) ⭐ | 4×5 @ 65.0kg | ❌ Not logged | ❌ |
+| Weighted Pull Up (Heavy) ⭐ | 3×6 @ 5.0kg | 3×8 @ 5.0kg | ✅ |
+| Leg Press ⭐ | 4×12 @ 150.0kg | 3×12 @ 150.0kg | ⚠️ |
+| Seated Leg Curl ⭐ | 3×12 @ 100.0kg | 3×10 @ 100.0kg | ⚠️ |
+
+**Sessions completed:** 8/5 | **Total working sets:** 83 | ❌ Below target
 
 ---
 
-## 🏋️ Training Detail
+## 📋 Sessions This Week
 
-### Sessions This Week
 - **2026-03-23** — Leg day pull up primer (0 min, 1 exercises)
 - **2026-03-23** — Legs (0 min, 5 exercises)
 - **2026-03-26** — Push day pull up primer (0 min, 1 exercises)
@@ -36,80 +28,268 @@
 - **2026-03-28** — Leg day pull up primer (0 min, 1 exercises)
 - **2026-03-28** — Legs (0 min, 6 exercises)
 
-### Priority Lifts
-| Exercise | Best Weight | Sets×Reps | Date |
-|---|---|---|---|
-| Pull Up (Weighted) | 5.0kg | 3×8 | 2026-03-27 |
-| Leg Press (Machine) | 150.0kg | 3×12 | 2026-03-28 |
-| Seated Leg Curl (Machine) | 100.0kg | 3×10 | 2026-03-28 |
-| Iso-Lateral Row (Machine) | 85.0kg | 3×9 | 2026-03-27 |
-| Lateral Raise (Machine) | 42.5kg | 3×10 | 2026-03-26 |
+---
 
-### All Other Exercises
-| Exercise | Best Weight | Sets×Reps |
-|---|---|---|
-| Bicep Curl (Dumbbell) | 12.5kg | 3×12 |
-| Chest Fly (Machine) | 77.0kg | 3×11 |
-| Chin Up | BW | 3×0 |
-| Dead Hang | BW | 2×0 |
-| Iso-Lateral Chest Press (Machine) | 50.0kg | 3×10 |
-| Leg Extension (Machine) | 65.0kg | 3×12 |
-| Pull Up | BW | 3×0 |
-| Rear Delt Reverse Fly (Machine) | 63.0kg | 3×11 |
-| Romanian Deadlift (Barbell) | 40.0kg | 1×9 |
-| Romanian Deadlift (Cable) | 30.0kg | 3×12 |
-| Scapular Pull Ups | BW | 2×0 |
-| Shoulder Press (Machine Plates) | 20.0kg | 3×10 |
-| Standing Calf Raise (Machine) | 120.0kg | 4×12 |
-| T Bar Shrugs | 40.0kg | 3×12 |
-| Triceps Dip | BW | 3×0 |
-| Triceps Pushdown | 60.0kg | 3×12 |
+## 🏋️ Full Exercise Breakdown — Every Exercise vs Every Target
+
+> ⭐ Priority | ✅ Hit | ⚠️ Close/partial | ❌ Missed | 🚀 Ahead | 📝 No target set
+
+
+### PUSH — Chest
+
+
+#### Bench Press (Barbell) ⭐
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 4×5 @ 65.0kg | Not logged | ❌ Missing |
+
+#### Iso-Lateral Chest Press (Machine)
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-26 | Chest/Triceps/Shoulders | 3×10 @ 50.0kg | 3×10 @ 50.0kg | ✅ Target hit | S1: 50.0kg×10  |  S2: 50.0kg×10  |  S3: 50.0kg×8 |
+
+#### Chest Fly (Machine)
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-26 | Chest/Triceps/Shoulders | 3×12 @ 77.0kg | 3×11 @ 77.0kg | ⚠️ 1 rep short of target on best set — very close | S1: 77.0kg×11  |  S2: 77.0kg×10  |  S3: 77.0kg×10 |
+
+
+### PUSH — Shoulders
+
+
+#### Shoulder Press (Machine Plates)
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-26 | Chest/Triceps/Shoulders | 4×10 @ 20.0kg | 3×10 @ 20.0kg | ⚠️ Sets short: 3/4 | S1: 20.0kg×10  |  S2: 20.0kg×9  |  S3: 20.0kg×8 |
+
+#### Lateral Raise (Machine)
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-26 | Chest/Triceps/Shoulders | 3×12 @ 42.5kg | 3×10 @ 42.5kg | ⚠️ Reps short: 10 vs 12 target on best set | S1: 42.5kg×10  |  S2: 42.5kg×9  |  S3: 42.5kg×7 |
+
+#### Single Arm Lateral Raise (Cable)
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×12 each side @ 7.5kg | Not logged | ❌ Missing |
+
+
+### PUSH — Triceps
+
+
+#### Triceps Dip
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-26 | Chest/Triceps/Shoulders | 3×12 @ BW | 3×12 @ BW | ✅ Target hit | S1: BW×12  |  S2: BW×11  |  S3: BW×9 |
+
+#### Triceps Pushdown
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-26 | Chest/Triceps/Shoulders | 3×12 @ 60.0kg | 3×12 @ 60.0kg | ✅ Target hit | S1: 60.0kg×12  |  S2: 60.0kg×11  |  S3: 60.0kg×10 |
+
+#### Single Arm Triceps Pushdown (Cable)
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×12 each side @ 22.5kg | Not logged | ❌ Missing |
+
+
+### PULL — Back
+
+
+#### Pull Up (Weighted) ⭐
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-27 | Back/Biceps/Traps | 3×6 @ 5.0kg | 3×8 @ 5.0kg | ✅ Target hit | S1: 5.0kg×8  |  S2: 5.0kg×6  |  S3: 5.0kg×5 |
+
+#### Pull Up
+> ⚠️ Drop sets after weighted — sub-maximal, never to failure
+
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-26 | Push day pull up primer | 3×5 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5  |  S2: BW×5 |
+| 2026-03-27 | Back/Biceps/Traps | 3×5 @ BW | 3×6 @ BW | ✅ Target hit | S1: BW×6  |  S2: BW×6  |  S3: BW×5 |
+| 2026-03-27 | Pull day pull up primer | 3×5 @ BW | 2×3 @ BW | ⚠️ Sets short: 2/3 | S1: BW×3  |  S2: BW×3 |
+
+#### Chin Up
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-27 | Back/Biceps/Traps | 3×4 @ BW | 3×5 @ BW | ✅ Target hit | S1: BW×5  |  S2: BW×4  |  S3: BW×4 |
+
+#### Iso-Lateral Row (Machine)
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-27 | Back/Biceps/Traps | 3×10 @ 85.0kg | 3×9 @ 85.0kg | ⚠️ 1 rep short of target on best set — very close | S1: 85.0kg×9  |  S2: 85.0kg×8  |  S3: 80.0kg×8 |
+
+#### Seated Cable Row - Bar Grip
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×10 @ 75.0kg | Not logged | ❌ Missing |
+
+#### Lat Pulldown (Cable)
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 4×12 @ 87.5kg | Not logged | ❌ Missing |
+
+
+### PULL — Rear Delt & Face Pull
+
+
+#### Rear Delt Reverse Fly (Machine)
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-27 | Back/Biceps/Traps | 3×12 @ 63.0kg | 3×11 @ 63.0kg | ⚠️ 1 rep short of target on best set — very close | S1: 63.0kg×11  |  S2: 63.0kg×10  |  S3: 63.0kg×10 |
+
+#### Face Pull (Cable)
+> ⚠️ Never ego lift — light, high reps, external rotation focus
+
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×15 @ 25.0kg | Not logged | ❌ Missing |
+
+
+### PULL — Biceps & Traps
+
+
+#### Bicep Curl (Dumbbell)
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-27 | Back/Biceps/Traps | 3×10 @ 12.5kg | 3×12 @ 12.5kg | ✅ Target hit | S1: 12.5kg×12  |  S2: 12.5kg×9  |  S3: 12.5kg×9 |
+
+#### Hammer Curl (Dumbbell)
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×10 @ 15.0kg | Not logged | ❌ Missing |
+
+#### Reverse Curl (Barbell)
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×12 @ 12.5kg | Not logged | ❌ Missing |
+
+#### T Bar Shrugs
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-27 | Back/Biceps/Traps | 3×12 @ 40.0kg | 3×12 @ 40.0kg | ✅ Target hit | S1: 40.0kg×12  |  S2: 40.0kg×12  |  S3: 40.0kg×12 |
+
+
+### LEGS — Quads
+
+
+#### Leg Extension (Machine)
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-23 | Legs | 3×12 @ 65.0kg | 3×12 @ 65.0kg | ✅ Target hit | S1: 65.0kg×12  |  S2: 65.0kg×10  |  S3: 65.0kg×10 |
+| 2026-03-28 | Legs | 3×12 @ 65.0kg | 3×12 @ 65.0kg | ✅ Target hit | S1: 65.0kg×12  |  S2: 65.0kg×11  |  S3: 65.0kg×9 |
+
+#### Leg Press (Machine) ⭐
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-23 | Legs | 4×12 @ 150.0kg | 3×12 @ 140.0kg | ❌ Weight 10.0kg short (140.0kg vs 150.0kg) | S1: 120.0kg×10  |  S2: 130.0kg×10  |  S3: 140.0kg×12 |
+| 2026-03-28 | Legs | 4×12 @ 150.0kg | 3×12 @ 150.0kg | ⚠️ Sets short: 3/4 | S1: 120.0kg×10  |  S2: 140.0kg×10  |  S3: 150.0kg×12 |
+
+#### Bulgarian Split Squat
+> ⚠️ BW only weeks 1-2. Add DBs week 3 if pain-free. STOP if lower back twinges.
+
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×8 each leg @ BW | Not logged | ❌ Missing |
+
+
+### LEGS — Hamstrings & Glutes
+
+
+#### Romanian Deadlift (Cable)
+> ⚠️ CABLE ONLY — never barbell. Hold 30kg for first 4 weeks regardless of feel.
+
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-23 | Legs | 3×12 @ 30.0kg | 3×10 @ 30.0kg | ⚠️ Reps short: 10 vs 12 target on best set | S1: 30.0kg×10  |  S2: 30.0kg×10  |  S3: 30.0kg×10 |
+| 2026-03-28 | Legs | 3×12 @ 30.0kg | 3×12 @ 30.0kg | ✅ Target hit | S1: 30.0kg×12  |  S2: 30.0kg×12  |  S3: 30.0kg×12 |
+
+#### Cable Pull-Through
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×15 @ 25.0kg | Not logged | ❌ Missing |
+
+#### Seated Leg Curl (Machine) ⭐
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-23 | Legs | 3×12 @ 100.0kg | 3×12 @ 95.0kg | ❌ Weight 5.0kg short (95.0kg vs 100.0kg) | S1: 95.0kg×12  |  S2: 95.0kg×10  |  S3: 95.0kg×10 |
+| 2026-03-28 | Legs | 3×12 @ 100.0kg | 3×10 @ 100.0kg | ⚠️ Reps short: 10 vs 12 target on best set | S1: 100.0kg×10  |  S2: 100.0kg×9  |  S3: 100.0kg×8 |
+
+
+### LEGS — Calves
+
+
+#### Standing Calf Raise (Machine)
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-23 | Legs | 4×12 @ 120.0kg | 4×11 @ 120.0kg | ⚠️ 1 rep short of target on best set — very close | S1: 120.0kg×11  |  S2: 120.0kg×9  |  S3: 120.0kg×10  |  S4: 120.0kg×9 |
+| 2026-03-28 | Legs | 4×12 @ 120.0kg | 4×12 @ 120.0kg | ✅ Target hit | S1: 120.0kg×12  |  S2: 120.0kg×11  |  S3: 120.0kg×9  |  S4: 120.0kg×10 |
+
+
+### CORE
+
+
+#### Plank
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×40s @ BW | Not logged | ❌ Missing |
+
+#### Dead Hang
+> ⚠️ Primer — spine decompression
+
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-23 | Leg day pull up primer | 2×40s @ BW | 1×0 @ BW | ⚠️ Sets short: 1/2 | S1: 35s |
+| 2026-03-27 | Pull day pull up primer | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 23s  |  S2: 20s |
+| 2026-03-28 | Leg day pull up primer | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 55s  |  S2: 52s |
+
+#### Scapular Pull Ups
+> ⚠️ Primer — shoulder activation
+
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-27 | Pull day pull up primer | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5  |  S2: BW×5 |
+
+
+### Extra Exercises (not in programme)
+
+- **Romanian Deadlift (Barbell)**: 1 working sets, best 40.0kg × 9 reps
 
 ---
 
 ## 🍗 Nutrition
-*To be populated from MFP — fill in manually at check-in or add MFP automation*
+*Fill in at check-in — MFP weekly summary*
 
-- **Average daily calories:** [ADD]
-- **Average daily protein:** [ADD]g
+- **Avg daily calories:** [ADD] kcal  *(target: ~2,900 training / ~2,450 rest)*
+- **Avg daily protein:** [ADD]g  *(target: 240g training / 210g rest)*
 - **Days logged in MFP:** [ADD]/7
-- **Lowest protein day:** [ADD] — [ADD]g on [ADD DAY]
-- **Any crash days (under 1,500 kcal)?** [YES/NO]
-- **Both shakes hit every day?** [YES/NO]
+- **Lowest protein day:** [ADD]g on [ADD DAY]
+- **Crash days under 1,500 kcal?** [YES/NO]
+- **Both shakes every day?** [YES/NO]
 
 ---
 
 ## 😴 Sleep & Recovery
-*To be populated from Samsung Health — screenshot weekly summary and add below*
+*Fill in at check-in — Samsung Health weekly summary screenshot*
 
-- **Average sleep score:** [ADD] / 100
-- **Average physical recovery:** [ADD]%
-- **Average HRV:** [ADD] ms
-- **Average resting HR:** [ADD] bpm
-- **Average sleep duration:** [ADD] hours
-- **Worst night (score + reason if known):** [ADD]
-- **Sunday bedtime this week:** [ADD]
+- **Avg sleep score:** [ADD] / 100  *(target: 78+)*
+- **Avg physical recovery:** [ADD]%  *(target: 80%+)*
+- **Avg HRV:** [ADD] ms
+- **Avg resting HR:** [ADD] bpm
+- **Avg sleep duration:** [ADD] hours
+- **Worst night:** [ADD] — score [ADD]
+- **Sunday bedtime:** [ADD]
 - **Snoring flagged?** [YES/NO]
 
 ---
 
 ## ⚖️ Body Composition
-*To be populated from Samsung Health daily weigh-in data*
+*Fill in at check-in — Samsung Health daily weigh-in + body scan*
 
-- **7-day average weight:** [ADD] kg
-- **Body fat % (latest scan):** [ADD]%
-- **Skeletal muscle (latest scan):** [ADD] kg
-- **Direction vs last week:** [UP/DOWN/FLAT]
-
----
-
-## 📊 Week 1 Bible Targets Reference
-
-| Exercise | This Week Target | Next Week Target |
-|---|---|---|
-| Bench Press — Heavy | 65.0kg × 4×5 | 65.0kg × 4×5 |
-| Bench Press — Volume | 55.0kg × 3×10 | 55.0kg × 3×10 |
-| Weighted Pull Up | 5.0kg × 3×6 | 5.0kg × 3×7 |
+- **7-day avg weight:** [ADD] kg  *(baseline: 86.0 kg)*
+- **Body fat %:** [ADD]%  *(baseline: 18.4%)*
+- **Skeletal muscle:** [ADD] kg  *(baseline: 38.4 kg — target: UP)*
+- **Direction vs last week:** [UP / DOWN / FLAT]
 
 ---
-*Report generated: 2026-03-29 14:15 UTC | Source: Hevy API (automatic) + manual inputs*
+*Auto-generated: 2026-03-29 17:08 UTC | Source: Hevy API*
