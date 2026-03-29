@@ -292,4 +292,4 @@
 - **Direction vs last week:** [UP / DOWN / FLAT]
 
 ---
-*Auto-generated: 2026-03-29 17:08 UTC | Source: Hevy API*
+*Auto-generated: 2026-03-29 21:02 UTC | Source: Hevy API*
