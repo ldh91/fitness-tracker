@@ -1,15 +1,22 @@
 """
 fetch_hevy.py
 -------------
-Pulls the last 7 days of workout data from the Hevy API and generates
-a structured weekly report markdown file.
+Pulls workout data from the Hevy API and generates a detailed weekly report.
+Every exercise compared against its exact week target from the 8-week bible.
 
-Run manually:  python scripts/fetch_hevy.py
-Run by GitHub Actions: automatically every Sunday 20:00 UTC
+Modes:
+  --mode weekly  : Full weekly report (Sunday cron)
+  --mode sync    : Check for new workouts since last sync, update if found (hourly)
+
+Manual run:
+  python scripts/fetch_hevy.py --mode weekly
+  python scripts/fetch_hevy.py --mode sync
 """
 
 import os
+import sys
 import json
+import argparse
 import requests
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -18,443 +25,928 @@ from pathlib import Path
 HEVY_API_KEY = os.environ.get("HEVY_API_KEY")
 HEVY_BASE_URL = "https://api.hevyapp.com/v1"
 REPO_ROOT = Path(__file__).parent.parent
-
-# ── Targets from the 8-week bible ──────────────────────────────
-# Week number → (bench_heavy_kg, bench_heavy_sets, bench_heavy_reps,
-#                bench_volume_kg, bench_volume_sets, bench_volume_reps,
-#                pull_up_kg, pull_up_sets, pull_up_reps)
-WEEKLY_TARGETS = {
-    1:  (65.0,   4, 5,  55.0,  3, 10, 5.0, 3, 6),
-    2:  (65.0,   4, 5,  55.0,  3, 10, 5.0, 3, 7),
-    3:  (67.5,   4, 5,  57.5,  3, 10, 5.0, 3, 8),
-    4:  (67.5,   4, 5,  57.5,  3, 10, 7.5, 3, 5),
-    5:  (70.0,   4, 5,  60.0,  3, 10, 7.5, 3, 6),
-    6:  (70.0,   4, 5,  60.0,  3, 10, 7.5, 3, 7),
-    7:  (72.5,   4, 5,  62.5,  3, 10, 7.5, 3, 8),
-    8:  (72.5,   4, 5,  62.5,  3, 10, 10.0, 3, 5),
-}
-
-# Programme start date
+LAST_SYNC_FILE = REPO_ROOT / "data" / "last_sync.json"
 PROGRAMME_START = datetime(2026, 3, 28, tzinfo=timezone.utc)
 
-# Nutrition targets
-PROTEIN_TARGET_TRAINING = 240
-PROTEIN_TARGET_REST = 210
-CALORIE_TARGET_TRAINING = 2900
-CALORIE_TARGET_REST = 2450
-SLEEP_SCORE_TARGET = 78
-RECOVERY_TARGET = 80
+# ── Full 8-week progression table ──────────────────────────────
+# Each exercise has a "weeks" list of 8 entries.
+# Each entry is a dict with keys: heavy, volume, both
+# Each value is a tuple: (sets, reps, weight_kg)  — weight None = bodyweight
+# "heavy" = Monday Push / Tuesday Pull
+# "volume" = Thursday Push / Friday Pull
+# "both" = same target both sessions (legs, single-day exercises)
+
+PROGRESSION = {
+
+    # ════════════════════════════════════════════════
+    # PUSH — CHEST
+    # ════════════════════════════════════════════════
+    "Bench Press (Barbell)": {
+        "priority": True,
+        "weeks": [
+            {"heavy": (4,  5, 65.0),  "volume": (3, 10, 55.0)},
+            {"heavy": (4,  5, 65.0),  "volume": (3, 10, 55.0)},
+            {"heavy": (4,  5, 67.5),  "volume": (3, 10, 57.5)},
+            {"heavy": (4,  5, 67.5),  "volume": (3, 10, 57.5)},
+            {"heavy": (4,  5, 70.0),  "volume": (3, 10, 60.0)},
+            {"heavy": (4,  5, 70.0),  "volume": (3, 10, 60.0)},
+            {"heavy": (4,  5, 72.5),  "volume": (3, 10, 62.5)},
+            {"heavy": (4,  5, 72.5),  "volume": (3, 10, 62.5)},
+        ],
+    },
+    "Iso-Lateral Chest Press (Machine)": {
+        "weeks": [
+            {"heavy": (3, 10, 50.0), "volume": (3, 12, 45.0)},
+            {"heavy": (3, 10, 50.0), "volume": (3, 12, 45.0)},
+            {"heavy": (3, 10, 52.5), "volume": (3, 12, 47.5)},
+            {"heavy": (3, 10, 52.5), "volume": (3, 12, 47.5)},
+            {"heavy": (3, 10, 55.0), "volume": (3, 12, 50.0)},
+            {"heavy": (3, 10, 55.0), "volume": (3, 12, 50.0)},
+            {"heavy": (3, 10, 57.5), "volume": (3, 12, 52.5)},
+            {"heavy": (3, 10, 57.5), "volume": (3, 12, 52.5)},
+        ],
+    },
+    "Chest Fly (Machine)": {
+        "weeks": [
+            {"heavy": (3, 12, 77.0), "volume": (3, 15, 70.0)},
+            {"heavy": (3, 12, 77.0), "volume": (3, 15, 70.0)},
+            {"heavy": (3, 12, 80.0), "volume": (3, 15, 73.0)},
+            {"heavy": (3, 12, 80.0), "volume": (3, 15, 73.0)},
+            {"heavy": (3, 12, 82.0), "volume": (3, 15, 77.0)},
+            {"heavy": (3, 12, 82.0), "volume": (3, 15, 77.0)},
+            {"heavy": (3, 12, 85.0), "volume": (3, 15, 80.0)},
+            {"heavy": (3, 12, 85.0), "volume": (3, 15, 80.0)},
+        ],
+    },
+
+    # ════════════════════════════════════════════════
+    # PUSH — SHOULDERS
+    # ════════════════════════════════════════════════
+    "Shoulder Press (Machine Plates)": {
+        "weeks": [
+            {"heavy": (4, 10, 20.0), "volume": (3, 12, 17.5)},
+            {"heavy": (4, 10, 20.0), "volume": (3, 12, 17.5)},
+            {"heavy": (4, 10, 20.0), "volume": (3, 12, 17.5)},
+            {"heavy": (4, 10, 22.5), "volume": (3, 12, 20.0)},
+            {"heavy": (4, 10, 22.5), "volume": (3, 12, 20.0)},
+            {"heavy": (4, 10, 22.5), "volume": (3, 12, 20.0)},
+            {"heavy": (4, 10, 25.0), "volume": (3, 12, 22.5)},
+            {"heavy": (4, 10, 25.0), "volume": (3, 12, 22.5)},
+        ],
+    },
+    "Lateral Raise (Machine)": {
+        "weeks": [
+            {"heavy": (3, 12, 42.5), "volume": (4, 12, 42.5)},
+            {"heavy": (3, 12, 42.5), "volume": (4, 12, 42.5)},
+            {"heavy": (3, 12, 45.0), "volume": (4, 12, 45.0)},
+            {"heavy": (3, 12, 45.0), "volume": (4, 12, 45.0)},
+            {"heavy": (3, 12, 47.5), "volume": (4, 12, 47.5)},
+            {"heavy": (3, 12, 47.5), "volume": (4, 12, 47.5)},
+            {"heavy": (3, 12, 50.0), "volume": (4, 12, 50.0)},
+            {"heavy": (3, 12, 50.0), "volume": (4, 12, 50.0)},
+        ],
+    },
+    "Single Arm Lateral Raise (Cable)": {
+        "reps_note": "each side",
+        "weeks": [
+            {"volume": (3, 12, 7.5)},
+            {"volume": (3, 12, 7.5)},
+            {"volume": (3, 12, 7.5)},
+            {"volume": (3, 12, 8.75)},
+            {"volume": (3, 12, 8.75)},
+            {"volume": (3, 12, 8.75)},
+            {"volume": (3, 12, 10.0)},
+            {"volume": (3, 12, 10.0)},
+        ],
+    },
+
+    # ════════════════════════════════════════════════
+    # PUSH — TRICEPS
+    # ════════════════════════════════════════════════
+    "Triceps Dip": {
+        "weight_note": "added via belt/DB",
+        "weeks": [
+            {"both": (3, 12, None)},
+            {"both": (3, 12, None)},
+            {"both": (3, 12, 5.0)},
+            {"both": (3, 12, 5.0)},
+            {"both": (3, 12, 7.5)},
+            {"both": (3, 12, 7.5)},
+            {"both": (3, 12, 10.0)},
+            {"both": (3, 12, 10.0)},
+        ],
+    },
+    "Triceps Pushdown": {
+        "weeks": [
+            {"heavy": (3, 12, 60.0)},
+            {"heavy": (3, 12, 60.0)},
+            {"heavy": (3, 12, 62.5)},
+            {"heavy": (3, 12, 62.5)},
+            {"heavy": (3, 12, 65.0)},
+            {"heavy": (3, 12, 65.0)},
+            {"heavy": (3, 12, 67.5)},
+            {"heavy": (3, 12, 67.5)},
+        ],
+    },
+    "Single Arm Triceps Pushdown (Cable)": {
+        "reps_note": "each side",
+        "weeks": [
+            {"volume": (3, 12, 22.5)},
+            {"volume": (3, 12, 22.5)},
+            {"volume": (3, 12, 22.5)},
+            {"volume": (3, 12, 25.0)},
+            {"volume": (3, 12, 25.0)},
+            {"volume": (3, 12, 25.0)},
+            {"volume": (3, 12, 27.5)},
+            {"volume": (3, 12, 27.5)},
+        ],
+    },
+
+    # ════════════════════════════════════════════════
+    # PULL — BACK
+    # ════════════════════════════════════════════════
+    "Pull Up (Weighted)": {
+        "priority": True,
+        "weeks": [
+            {"heavy": (3, 6,  5.0),  "volume": (3, 5,  5.0)},
+            {"heavy": (3, 7,  5.0),  "volume": (3, 6,  5.0)},
+            {"heavy": (3, 8,  5.0),  "volume": (3, 6,  5.0)},
+            {"heavy": (3, 5,  7.5),  "volume": (3, 4,  7.5)},
+            {"heavy": (3, 6,  7.5),  "volume": (3, 5,  7.5)},
+            {"heavy": (3, 7,  7.5),  "volume": (3, 6,  7.5)},
+            {"heavy": (3, 8,  7.5),  "volume": (3, 7,  7.5)},
+            {"heavy": (3, 5, 10.0),  "volume": (3, 4, 10.0)},
+        ],
+    },
+    "Pull Up": {
+        "note": "Drop sets after weighted — sub-maximal, never to failure",
+        "weeks": [
+            {"both": (3, 5, None)},
+            {"both": (3, 6, None)},
+            {"both": (3, 6, None)},
+            {"both": (3, 6, None)},
+            {"both": (3, 6, None)},
+            {"both": (3, 6, None)},
+            {"both": (3, 7, None)},
+            {"both": (3, 7, None)},
+        ],
+    },
+    "Chin Up": {
+        "weeks": (
+            [{"both": (3, 4, None)}] * 4 +
+            [{"both": (3, 5, None)}] * 2 +
+            [{"both": (3, 6, None)}] * 2
+        ),
+    },
+    "Iso-Lateral Row (Machine)": {
+        "weeks": [
+            {"heavy": (3, 10, 85.0),  "volume": (3, 12, 80.0)},
+            {"heavy": (3, 10, 85.0),  "volume": (3, 12, 80.0)},
+            {"heavy": (3, 10, 90.0),  "volume": (3, 12, 85.0)},
+            {"heavy": (3, 10, 90.0),  "volume": (3, 12, 85.0)},
+            {"heavy": (3, 10, 92.5),  "volume": (3, 12, 87.5)},
+            {"heavy": (3, 10, 92.5),  "volume": (3, 12, 87.5)},
+            {"heavy": (3, 10, 95.0),  "volume": (3, 12, 90.0)},
+            {"heavy": (3, 10, 95.0),  "volume": (3, 12, 90.0)},
+        ],
+    },
+    "Seated Cable Row - Bar Grip": {
+        "weeks": [
+            {"both": (3, 10, 75.0)},
+            {"both": (3, 10, 75.0)},
+            {"both": (3, 10, 77.5)},
+            {"both": (3, 10, 77.5)},
+            {"both": (3, 10, 80.0)},
+            {"both": (3, 10, 80.0)},
+            {"both": (3, 10, 82.5)},
+            {"both": (3, 10, 82.5)},
+        ],
+    },
+    "Lat Pulldown (Cable)": {
+        "weeks": [
+            {"volume": (4, 12, 87.5)},
+            {"volume": (4, 12, 87.5)},
+            {"volume": (4, 12, 90.0)},
+            {"volume": (4, 12, 90.0)},
+            {"volume": (4, 12, 92.5)},
+            {"volume": (4, 12, 92.5)},
+            {"volume": (4, 12, 95.0)},
+            {"volume": (4, 12, 95.0)},
+        ],
+    },
+
+    # ════════════════════════════════════════════════
+    # PULL — REAR DELT & FACE PULL
+    # ════════════════════════════════════════════════
+    "Rear Delt Reverse Fly (Machine)": {
+        "weeks": [
+            {"heavy": (3, 12, 63.0), "volume": (3, 15, 60.0)},
+            {"heavy": (3, 12, 63.0), "volume": (3, 15, 60.0)},
+            {"heavy": (3, 12, 66.0), "volume": (3, 15, 63.0)},
+            {"heavy": (3, 12, 66.0), "volume": (3, 15, 63.0)},
+            {"heavy": (3, 12, 70.0), "volume": (3, 15, 66.0)},
+            {"heavy": (3, 12, 70.0), "volume": (3, 15, 66.0)},
+            {"heavy": (3, 12, 73.0), "volume": (3, 15, 70.0)},
+            {"heavy": (3, 12, 73.0), "volume": (3, 15, 70.0)},
+        ],
+    },
+    "Face Pull (Cable)": {
+        "note": "Never ego lift — light, high reps, external rotation focus",
+        "weeks": [
+            {"heavy": (3, 15, 25.0), "volume": (3, 20, 20.0)},
+            {"heavy": (3, 15, 25.0), "volume": (3, 20, 20.0)},
+            {"heavy": (3, 15, 27.5), "volume": (3, 20, 22.5)},
+            {"heavy": (3, 15, 27.5), "volume": (3, 20, 22.5)},
+            {"heavy": (3, 15, 27.5), "volume": (3, 20, 22.5)},
+            {"heavy": (3, 15, 30.0), "volume": (3, 20, 25.0)},
+            {"heavy": (3, 15, 30.0), "volume": (3, 20, 25.0)},
+            {"heavy": (3, 15, 30.0), "volume": (3, 20, 25.0)},
+        ],
+    },
+
+    # ════════════════════════════════════════════════
+    # PULL — BICEPS & TRAPS
+    # ════════════════════════════════════════════════
+    "Bicep Curl (Dumbbell)": {
+        "weeks": [
+            {"heavy": (3, 10, 12.5), "volume": (3, 12, 12.5)},
+            {"heavy": (3, 10, 12.5), "volume": (3, 12, 12.5)},
+            {"heavy": (3, 10, 12.5), "volume": (3, 12, 12.5)},
+            {"heavy": (3, 10, 14.0), "volume": (3, 12, 14.0)},
+            {"heavy": (3, 10, 14.0), "volume": (3, 12, 14.0)},
+            {"heavy": (3, 10, 14.0), "volume": (3, 12, 14.0)},
+            {"heavy": (3, 10, 15.0), "volume": (3, 12, 15.0)},
+            {"heavy": (3, 10, 15.0), "volume": (3, 12, 15.0)},
+        ],
+    },
+    "Hammer Curl (Dumbbell)": {
+        "weeks": [
+            {"both": (3, 10, 15.0)},
+            {"both": (3, 11, 15.0)},
+            {"both": (3, 12, 15.0)},
+            {"both": (3, 10, 16.25)},
+            {"both": (3, 11, 16.25)},
+            {"both": (3, 12, 16.25)},
+            {"both": (3, 10, 17.5)},
+            {"both": (3, 11, 17.5)},
+        ],
+    },
+    "Reverse Curl (Barbell)": {
+        "weeks": [
+            {"both": (3, 12, 12.5)},
+            {"both": (3, 12, 12.5)},
+            {"both": (3, 12, 12.5)},
+            {"both": (3, 12, 15.0)},
+            {"both": (3, 12, 15.0)},
+            {"both": (3, 12, 15.0)},
+            {"both": (3, 12, 17.5)},
+            {"both": (3, 12, 17.5)},
+        ],
+    },
+    "T Bar Shrugs": {
+        "weeks": [
+            {"heavy": (3, 12, 40.0), "volume": (3, 15, 35.0)},
+            {"heavy": (3, 12, 40.0), "volume": (3, 15, 35.0)},
+            {"heavy": (3, 12, 42.5), "volume": (3, 15, 37.5)},
+            {"heavy": (3, 12, 42.5), "volume": (3, 15, 37.5)},
+            {"heavy": (3, 12, 45.0), "volume": (3, 15, 40.0)},
+            {"heavy": (3, 12, 45.0), "volume": (3, 15, 40.0)},
+            {"heavy": (3, 12, 47.5), "volume": (3, 15, 42.5)},
+            {"heavy": (3, 12, 47.5), "volume": (3, 15, 42.5)},
+        ],
+    },
+
+    # ════════════════════════════════════════════════
+    # LEGS — QUADS
+    # ════════════════════════════════════════════════
+    "Leg Extension (Machine)": {
+        "weeks": [
+            {"both": (3, 12, 65.0)},
+            {"both": (3, 12, 65.0)},
+            {"both": (3, 12, 70.0)},
+            {"both": (3, 12, 70.0)},
+            {"both": (3, 12, 72.5)},
+            {"both": (3, 12, 72.5)},
+            {"both": (3, 12, 75.0)},
+            {"both": (3, 12, 75.0)},
+        ],
+    },
+    "Leg Press (Machine)": {
+        "priority": True,
+        "weeks": [
+            {"both": (4, 12, 150.0)},
+            {"both": (4, 12, 150.0)},
+            {"both": (4, 11, 155.0)},
+            {"both": (4, 10, 160.0)},
+            {"both": (4, 11, 160.0)},
+            {"both": (4, 10, 165.0)},
+            {"both": (4, 11, 165.0)},
+            {"both": (4, 10, 170.0)},
+        ],
+    },
+    "Bulgarian Split Squat": {
+        "reps_note": "each leg",
+        "note": "BW only weeks 1-2. Add DBs week 3 if pain-free. STOP if lower back twinges.",
+        "weeks": [
+            {"both": (3, 8, None)},
+            {"both": (3, 8, None)},
+            {"both": (3, 8, 5.0)},
+            {"both": (3, 8, 5.0)},
+            {"both": (3, 8, 7.5)},
+            {"both": (3, 8, 7.5)},
+            {"both": (3, 8, 10.0)},
+            {"both": (3, 8, 10.0)},
+        ],
+    },
+
+    # ════════════════════════════════════════════════
+    # LEGS — HAMSTRINGS & GLUTES
+    # ════════════════════════════════════════════════
+    "Romanian Deadlift (Cable)": {
+        "note": "CABLE ONLY — never barbell. Hold 30kg for first 4 weeks regardless of feel.",
+        "weeks": [
+            {"both": (3, 12, 30.0)},
+            {"both": (3, 12, 30.0)},
+            {"both": (3, 12, 30.0)},
+            {"both": (3, 12, 30.0)},
+            {"both": (3, 12, 32.5)},
+            {"both": (3, 12, 32.5)},
+            {"both": (3, 12, 35.0)},
+            {"both": (3, 12, 35.0)},
+        ],
+    },
+    "Cable Pull-Through": {
+        "weeks": [
+            {"both": (3, 15, 25.0)},
+            {"both": (3, 15, 25.0)},
+            {"both": (3, 15, 27.5)},
+            {"both": (3, 15, 27.5)},
+            {"both": (3, 15, 30.0)},
+            {"both": (3, 15, 30.0)},
+            {"both": (3, 15, 32.5)},
+            {"both": (3, 15, 32.5)},
+        ],
+    },
+    "Seated Leg Curl (Machine)": {
+        "priority": True,
+        "weeks": [
+            {"both": (3, 12, 100.0)},
+            {"both": (3, 12, 100.0)},
+            {"both": (3, 12, 102.5)},
+            {"both": (3, 12, 105.0)},
+            {"both": (3, 12, 107.5)},
+            {"both": (3, 12, 107.5)},
+            {"both": (3, 12, 110.0)},
+            {"both": (3, 12, 110.0)},
+        ],
+    },
+
+    # ════════════════════════════════════════════════
+    # LEGS — CALVES
+    # ════════════════════════════════════════════════
+    "Standing Calf Raise (Machine)": {
+        "weeks": [
+            {"both": (4, 12, 120.0)},
+            {"both": (4, 12, 120.0)},
+            {"both": (4, 12, 125.0)},
+            {"both": (4, 12, 125.0)},
+            {"both": (4, 12, 130.0)},
+            {"both": (4, 12, 130.0)},
+            {"both": (4, 12, 135.0)},
+            {"both": (4, 12, 135.0)},
+        ],
+    },
+
+    # ════════════════════════════════════════════════
+    # CORE
+    # ════════════════════════════════════════════════
+    "Plank": {
+        "weeks": [
+            {"both": (3, "40s", None)},
+            {"both": (3, "40s", None)},
+            {"both": (3, "45s", None)},
+            {"both": (3, "45s", None)},
+            {"both": (3, "50s", None)},
+            {"both": (3, "50s", None)},
+            {"both": (3, "55s", None)},
+            {"both": (3, "60s", None)},
+        ],
+    },
+    "Dead Hang": {
+        "note": "Primer — spine decompression",
+        "weeks": [{"both": (2, "40s", None)}] * 8,
+    },
+    "Scapular Pull Ups": {
+        "note": "Primer — shoulder activation",
+        "weeks": [{"both": (2, 5, None)}] * 8,
+    },
+}
+
+# ── Session type detection ──────────────────────────────────────
+HEAVY_KEYWORDS = ["heavy", "monday", "push day", "pull day", "back/biceps", "chest/triceps"]
+VOLUME_KEYWORDS = ["volume", "thursday", "friday"]
 
 
-def get_current_week():
-    """Return which week of the programme we're in (1-8)."""
-    now = datetime.now(timezone.utc)
-    delta = (now - PROGRAMME_START).days
-    week = (delta // 7) + 1
-    return max(1, min(8, week))
+def detect_session_type(workout_title):
+    t = workout_title.lower()
+    if any(k in t for k in HEAVY_KEYWORDS):
+        return "heavy"
+    if any(k in t for k in VOLUME_KEYWORDS):
+        return "volume"
+    return "both"
 
 
-def get_week_date_range():
-    """Return ISO start and end datetimes for the past 7 days."""
-    now = datetime.now(timezone.utc)
-    week_start = now - timedelta(days=7)
-    return week_start.isoformat(), now.isoformat()
-
+# ── Hevy API ────────────────────────────────────────────────────
 
 def hevy_get(endpoint, params=None):
-    """Make an authenticated GET request to the Hevy API."""
     if not HEVY_API_KEY:
         raise ValueError("HEVY_API_KEY environment variable not set.")
-    headers = {
-        "api-key": HEVY_API_KEY,
-        "accept": "application/json",
-    }
-    url = f"{HEVY_BASE_URL}/{endpoint}"
-    resp = requests.get(url, headers=headers, params=params, timeout=30)
+    headers = {"api-key": HEVY_API_KEY, "accept": "application/json"}
+    resp = requests.get(
+        f"{HEVY_BASE_URL}/{endpoint}",
+        headers=headers, params=params, timeout=30
+    )
     resp.raise_for_status()
     return resp.json()
 
 
-def fetch_workouts_this_week():
-    """Fetch all workouts from the past 7 days."""
-    print("Fetching workouts from Hevy API...")
+def fetch_workouts_since(since_dt):
     all_workouts = []
     page = 1
-    week_start, week_end = get_week_date_range()
-
+    since_str = since_dt.isoformat()
     while True:
         data = hevy_get("workouts", params={"page": page, "pageSize": 10})
         workouts = data.get("workouts", [])
         if not workouts:
             break
-
         for w in workouts:
-            start = w.get("start_time", "")
-            if start >= week_start:
+            if w.get("start_time", "") >= since_str:
                 all_workouts.append(w)
-            elif start < week_start:
-                # Workouts are returned newest first — stop when we go past our window
+            else:
                 return all_workouts
-
-        # Check if there are more pages
-        total_pages = data.get("page_count", 1)
-        if page >= total_pages:
+        if page >= data.get("page_count", 1):
             break
         page += 1
-
     return all_workouts
 
 
-def extract_exercise_data(workouts):
-    """
-    Extract key exercise data from workouts.
-    Returns a dict keyed by exercise title with best set info.
-    """
-    exercises = {}
+# ── Programme helpers ───────────────────────────────────────────
 
-    for workout in workouts:
-        workout_title = workout.get("title", "Unknown")
-        workout_date = workout.get("start_time", "")[:10]
-
-        for exercise in workout.get("exercises", []):
-            title = exercise.get("title", "Unknown")
-            sets = exercise.get("sets", [])
-
-            # Find best working set (highest weight)
-            best_weight = 0
-            best_reps = 0
-            working_sets = []
-
-            for s in sets:
-                set_type = s.get("type", "normal")
-                weight_kg = float(s.get("weight_kg") or 0)
-                reps = int(s.get("reps") or 0)
-
-                if set_type == "normal":
-                    working_sets.append({"weight_kg": weight_kg, "reps": reps})
-                    if weight_kg > best_weight:
-                        best_weight = weight_kg
-                        best_reps = reps
-
-            if working_sets:
-                key = title
-                if key not in exercises:
-                    exercises[key] = []
-                exercises[key].append({
-                    "date": workout_date,
-                    "workout": workout_title,
-                    "best_weight_kg": best_weight,
-                    "best_reps": best_reps,
-                    "working_sets": working_sets,
-                    "total_working_sets": len(working_sets),
-                })
-
-    return exercises
+def get_current_week():
+    delta = (datetime.now(timezone.utc) - PROGRAMME_START).days
+    return max(1, min(8, (delta // 7) + 1))
 
 
-def get_bench_press_data(exercises):
-    """Extract bench press performance for heavy (Mon) and volume (Thu) sessions."""
-    bench_data = {"heavy": None, "volume": None}
-
-    bench_sets = exercises.get("Bench Press (Barbell)", [])
-    for entry in bench_sets:
-        workout = entry.get("workout", "").lower()
-        # Heavy day = Push Heavy (Monday), Volume day = Push Volume (Thursday)
-        if "heavy" in workout or "monday" in workout:
-            bench_data["heavy"] = entry
-        elif "volume" in workout or "thursday" in workout:
-            bench_data["volume"] = entry
-        else:
-            # Assign by weight — heavier set is the heavy day
-            if bench_data["heavy"] is None:
-                bench_data["heavy"] = entry
-            elif entry["best_weight_kg"] > bench_data["heavy"]["best_weight_kg"]:
-                bench_data["volume"] = bench_data["heavy"]
-                bench_data["heavy"] = entry
-
-    return bench_data
-
-
-def get_pull_up_weighted_data(exercises):
-    """Extract weighted pull-up data."""
-    pull_ups = exercises.get("Pull Up (Weighted)", [])
-    if not pull_ups:
+def get_target(ex_name, week_number, session_type):
+    prog = PROGRESSION.get(ex_name)
+    if not prog:
         return None
-    # Return the best session (highest weight)
-    return max(pull_ups, key=lambda x: x["best_weight_kg"])
+    wk = prog["weeks"][min(week_number - 1, 7)]
+    # Priority: match session type, fall back to "both"
+    for key in [session_type, "both", "heavy", "volume"]:
+        if key in wk:
+            s, r, w = wk[key]
+            return {"sets": s, "reps": r, "weight": w}
+    return None
 
 
-def assess_vs_target(actual_weight, actual_sets, actual_reps,
-                     target_weight, target_sets, target_reps):
-    """Return a status string comparing actual vs target."""
-    if actual_weight is None:
-        return "❓ No data"
-    if actual_weight > target_weight:
-        return f"🚀 Ahead of target"
-    elif actual_weight == target_weight:
-        if actual_sets >= target_sets and actual_reps >= target_reps:
-            return "✅ Hit target"
-        elif actual_sets >= target_sets and actual_reps >= target_reps - 1:
-            return "⚠️ Close — 1 rep short"
-        else:
-            return f"❌ Weight hit but sets/reps short ({actual_sets}×{actual_reps} vs {target_sets}×{target_reps})"
-    else:
-        return f"❌ Below target weight ({actual_weight}kg vs {target_weight}kg)"
+# ── Formatting helpers ──────────────────────────────────────────
+
+def fmt_weight(w):
+    return f"{w}kg" if w and w > 0 else "BW"
 
 
-def calculate_total_volume(workouts):
-    """Calculate total working sets across all workouts this week."""
-    total = 0
+def fmt_target(target, reps_note=""):
+    if not target:
+        return "—"
+    s, r, w = target["sets"], target["reps"], target["weight"]
+    rn = f" {reps_note}" if reps_note else ""
+    return f"{s}×{r}{rn} @ {fmt_weight(w)}"
+
+
+def fmt_sets_detail(working_sets):
+    parts = []
+    for i, s in enumerate(working_sets, 1):
+        w = s["weight_kg"]
+        r = s["reps"]
+        d = s.get("duration_s", 0)
+        if w > 0 and r > 0:
+            parts.append(f"S{i}: {w}kg×{r}")
+        elif w > 0 and d > 0:
+            parts.append(f"S{i}: {w}kg×{d}s")
+        elif r > 0:
+            parts.append(f"S{i}: BW×{r}")
+        elif d > 0:
+            parts.append(f"S{i}: {d}s")
+    return "  |  ".join(parts) if parts else "—"
+
+
+def assess(actual_sets, actual_weight, actual_best_reps,
+           target_sets, target_weight, target_reps):
+    if actual_sets == 0:
+        return "❌", "Not logged"
+    if isinstance(target_reps, str):
+        return ("✅", "Timed sets completed") if actual_sets >= target_sets else ("⚠️", "Sets short")
+
+    if target_weight and actual_weight < target_weight - 0.1:
+        return "❌", f"Weight {target_weight - actual_weight:.1f}kg short ({actual_weight}kg vs {target_weight}kg)"
+    if target_weight and actual_weight > target_weight + 0.1:
+        return "🚀", f"Ahead — {actual_weight}kg vs {target_weight}kg target"
+    if actual_sets < target_sets:
+        return "⚠️", f"Sets short: {actual_sets}/{target_sets}"
+    if target_reps and actual_best_reps < target_reps - 1:
+        return "⚠️", f"Reps short: {actual_best_reps} vs {target_reps} target on best set"
+    if target_reps and actual_best_reps == target_reps - 1:
+        return "⚠️", "1 rep short of target on best set — very close"
+    return "✅", "Target hit"
+
+
+# ── Extract exercise entries ────────────────────────────────────
+
+def extract_exercises(workouts):
+    entries = []
     for w in workouts:
-        for ex in w.get("exercises", []):
-            for s in ex.get("sets", []):
-                if s.get("type") == "normal":
-                    total += 1
-    return total
-
-
-def generate_report(workouts, week_number):
-    """Generate the weekly markdown report."""
-    week_start, week_end = get_week_date_range()
-    report_date = datetime.now(timezone.utc).strftime("%d %B %Y")
-
-    # Get targets for this week
-    targets = WEEKLY_TARGETS.get(week_number, WEEKLY_TARGETS[8])
-    (bh_kg, bh_sets, bh_reps,
-     bv_kg, bv_sets, bv_reps,
-     pu_kg, pu_sets, pu_reps) = targets
-
-    # Extract exercise data
-    exercises = extract_exercise_data(workouts)
-    bench = get_bench_press_data(exercises)
-    pull_up = get_pull_up_weighted_data(exercises)
-    total_sets = calculate_total_volume(workouts)
-    sessions_completed = len(workouts)
-
-    # Bench press heavy assessment
-    bh = bench.get("heavy")
-    bh_status = assess_vs_target(
-        bh["best_weight_kg"] if bh else None,
-        bh["total_working_sets"] if bh else 0,
-        bh["best_reps"] if bh else 0,
-        bh_kg, bh_sets, bh_reps
-    )
-
-    # Bench press volume assessment
-    bv = bench.get("volume")
-    bv_status = assess_vs_target(
-        bv["best_weight_kg"] if bv else None,
-        bv["total_working_sets"] if bv else 0,
-        bv["best_reps"] if bv else 0,
-        bv_kg, bv_sets, bv_reps
-    )
-
-    # Pull up assessment
-    pu_status = assess_vs_target(
-        pull_up["best_weight_kg"] if pull_up else None,
-        pull_up["total_working_sets"] if pull_up else 0,
-        pull_up["best_reps"] if pull_up else 0,
-        pu_kg, pu_sets, pu_reps
-    )
-
-    # Sessions assessment
-    sessions_status = "✅ Hit target" if sessions_completed >= 5 else f"❌ {sessions_completed}/5 sessions"
-
-    # Build all exercises section
-    exercise_lines = []
-    priority_exercises = [
-        "Bench Press (Barbell)",
-        "Pull Up (Weighted)",
-        "Leg Press (Machine)",
-        "Seated Leg Curl (Machine)",
-        "Iso-Lateral Row (Machine)",
-        "Lateral Raise (Machine)",
-        "Cable RDL",
-        "Bulgarian Split Squat",
-    ]
-
-    for ex_name in priority_exercises:
-        entries = exercises.get(ex_name, [])
-        if entries:
-            best = max(entries, key=lambda x: x["best_weight_kg"])
-            sets_str = f"{best['total_working_sets']}×{best['best_reps']}"
-            weight_str = f"{best['best_weight_kg']}kg" if best["best_weight_kg"] > 0 else "BW"
-            exercise_lines.append(f"| {ex_name} | {weight_str} | {sets_str} | {best['date']} |")
-
-    # Other exercises logged
-    other_lines = []
-    for ex_name, entries in sorted(exercises.items()):
-        if ex_name not in priority_exercises and entries:
-            best = max(entries, key=lambda x: x["best_weight_kg"])
-            sets_str = f"{best['total_working_sets']}×{best['best_reps']}"
-            weight_str = f"{best['best_weight_kg']}kg" if best["best_weight_kg"] > 0 else "BW"
-            other_lines.append(f"| {ex_name} | {weight_str} | {sets_str} |")
-
-    # Format workout list
-    workout_list = []
-    for w in sorted(workouts, key=lambda x: x.get("start_time", "")):
         title = w.get("title", "Unknown")
         date = w.get("start_time", "")[:10]
-        duration_s = w.get("duration", 0) or 0
-        duration_min = round(duration_s / 60)
+        session_type = detect_session_type(title)
+        duration_min = round((w.get("duration") or 0) / 60)
+
+        for ex in w.get("exercises", []):
+            ex_name = ex.get("title", "Unknown")
+            working = []
+            warmups = []
+            for s in ex.get("sets", []):
+                item = {
+                    "weight_kg": float(s.get("weight_kg") or 0),
+                    "reps": int(s.get("reps") or 0),
+                    "duration_s": int(s.get("duration_seconds") or 0),
+                    "type": s.get("type", "normal"),
+                }
+                if item["type"] == "warmup":
+                    warmups.append(item)
+                elif item["type"] == "normal":
+                    working.append(item)
+
+            if working or warmups:
+                best_w = max((s["weight_kg"] for s in working), default=0)
+                best_r = max((s["reps"] for s in working), default=0)
+                entries.append({
+                    "exercise": ex_name,
+                    "workout_title": title,
+                    "workout_date": date,
+                    "session_type": session_type,
+                    "working_sets": working,
+                    "warmup_sets": warmups,
+                    "n_working": len(working),
+                    "best_weight": best_w,
+                    "best_reps": best_r,
+                })
+    return entries
+
+
+def group_by_exercise(entries):
+    g = {}
+    for e in entries:
+        g.setdefault(e["exercise"], []).append(e)
+    return g
+
+
+# ── Build exercise analysis section ────────────────────────────
+
+def exercise_section(ex_names, section_title, grouped, week_number):
+    lines = [f"\n### {section_title}\n"]
+
+    for ex_name in ex_names:
+        prog = PROGRESSION.get(ex_name, {})
+        is_priority = prog.get("priority", False)
+        note = prog.get("note", "")
+        reps_note = prog.get("reps_note", "")
+        entries = grouped.get(ex_name, [])
+
+        star = " ⭐" if is_priority else ""
+        lines.append(f"\n#### {ex_name}{star}")
+
+        if note:
+            lines.append(f"> ⚠️ {note}\n")
+
+        if not entries:
+            # Show what was expected but wasn't done
+            target = get_target(ex_name, week_number, "both")
+            if not target:
+                target = get_target(ex_name, week_number, "heavy")
+            if target:
+                t_str = fmt_target(target, reps_note)
+                lines.append("| Session | Target | Actual | Status |")
+                lines.append("|---|---|---|---|")
+                lines.append(f"| — | {t_str} | Not logged | ❌ Missing |")
+            continue
+
+        lines.append("| Date | Session | Target | Actual | Status | All Sets |")
+        lines.append("|---|---|---|---|---|---|")
+
+        for entry in sorted(entries, key=lambda x: x["workout_date"]):
+            date = entry["workout_date"]
+            session_label = entry["workout_title"]
+            stype = entry["session_type"]
+            n_sets = entry["n_working"]
+            best_w = entry["best_weight"]
+            best_r = entry["best_reps"]
+            sets_detail = fmt_sets_detail(entry["working_sets"])
+
+            target = get_target(ex_name, week_number, stype)
+            t_str = fmt_target(target, reps_note)
+
+            actual_w_str = fmt_weight(best_w)
+            actual_str = f"{n_sets}×{best_r} @ {actual_w_str}"
+
+            if target:
+                t_s = target["sets"]
+                t_r = target["reps"]
+                t_w = target["weight"]
+                emoji, detail = assess(n_sets, best_w, best_r, t_s, t_w,
+                                       t_r if isinstance(t_r, int) else 0)
+            else:
+                emoji, detail = "📝", "No target — logged"
+
+            lines.append(
+                f"| {date} | {session_label[:30]} | {t_str} | {actual_str} "
+                f"| {emoji} {detail} | {sets_detail} |"
+            )
+
+    return "\n".join(lines)
+
+
+# ── Report assembly ─────────────────────────────────────────────
+
+def generate_report(workouts, week_number):
+    report_date = datetime.now(timezone.utc).strftime("%d %B %Y")
+    week_start = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%d")
+    week_end = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    entries = extract_exercises(workouts)
+    grouped = group_by_exercise(entries)
+
+    sessions = len(workouts)
+    total_sets = sum(e["n_working"] for e in entries)
+
+    # Session list
+    workout_lines = []
+    for w in sorted(workouts, key=lambda x: x.get("start_time", "")):
+        date = w.get("start_time", "")[:10]
+        title = w.get("title", "Unknown")
+        dur = round((w.get("duration") or 0) / 60)
         ex_count = len(w.get("exercises", []))
-        workout_list.append(f"- **{date}** — {title} ({duration_min} min, {ex_count} exercises)")
+        workout_lines.append(f"- **{date}** — {title} ({dur} min, {ex_count} exercises)")
 
-    # ── BUILD MARKDOWN ──────────────────────────────────────────
-    report = f"""# Weekly Check-In Report
-## Week {week_number} of 8 — {report_date}
-*Data period: {week_start[:10]} to {week_end[:10]}*
-*Auto-generated from Hevy API — nutrition and sleep to be added manually or via MFP/Samsung automation*
+    # Priority snapshots
+    def snap(ex, wk):
+        e_list = grouped.get(ex, [])
+        if not e_list:
+            return "❌ Not logged", "❌"
+        best = max(e_list, key=lambda x: x["best_weight"])
+        t = get_target(ex, wk, best["session_type"])
+        w_str = fmt_weight(best["best_weight"])
+        actual = f"{best['n_working']}×{best['best_reps']} @ {w_str}"
+        if t:
+            emoji, _ = assess(
+                best["n_working"], best["best_weight"], best["best_reps"],
+                t["sets"], t["weight"], t["reps"] if isinstance(t["reps"], int) else 0
+            )
+        else:
+            emoji = "📝"
+        return actual, emoji
+
+    # Get targets for snapshot table
+    def target_str(ex, wk, stype="heavy"):
+        t = get_target(ex, wk, stype) or get_target(ex, wk, "both")
+        return fmt_target(t) if t else "—"
+
+    bench_actual, bench_emoji = snap("Bench Press (Barbell)", week_number)
+    pu_actual, pu_emoji = snap("Pull Up (Weighted)", week_number)
+    lp_actual, lp_emoji = snap("Leg Press (Machine)", week_number)
+    lc_actual, lc_emoji = snap("Seated Leg Curl (Machine)", week_number)
+
+    vol_status = ("✅ On target" if 99 <= total_sets <= 135
+                  else ("⚠️ High — watch recovery" if total_sets > 135
+                        else "❌ Below target"))
+
+    # Section definitions
+    push_chest     = ["Bench Press (Barbell)", "Iso-Lateral Chest Press (Machine)", "Chest Fly (Machine)"]
+    push_shoulders = ["Shoulder Press (Machine Plates)", "Lateral Raise (Machine)", "Single Arm Lateral Raise (Cable)"]
+    push_triceps   = ["Triceps Dip", "Triceps Pushdown", "Single Arm Triceps Pushdown (Cable)"]
+    pull_back      = ["Pull Up (Weighted)", "Pull Up", "Chin Up", "Iso-Lateral Row (Machine)", "Seated Cable Row - Bar Grip", "Lat Pulldown (Cable)"]
+    pull_rear      = ["Rear Delt Reverse Fly (Machine)", "Face Pull (Cable)"]
+    pull_biceps    = ["Bicep Curl (Dumbbell)", "Hammer Curl (Dumbbell)", "Reverse Curl (Barbell)", "T Bar Shrugs"]
+    legs_quads     = ["Leg Extension (Machine)", "Leg Press (Machine)", "Bulgarian Split Squat"]
+    legs_hams      = ["Romanian Deadlift (Cable)", "Cable Pull-Through", "Seated Leg Curl (Machine)"]
+    legs_calves    = ["Standing Calf Raise (Machine)"]
+    core_ex        = ["Plank", "Dead Hang", "Scapular Pull Ups"]
+
+    all_planned = set(
+        push_chest + push_shoulders + push_triceps +
+        pull_back + pull_rear + pull_biceps +
+        legs_quads + legs_hams + legs_calves + core_ex
+    )
+    extra = [ex for ex in grouped if ex not in all_planned]
+    extra_section = ""
+    if extra:
+        extra_lines = ["\n### Extra Exercises (not in programme)\n"]
+        for ex in extra:
+            e = grouped[ex][0]
+            extra_lines.append(
+                f"- **{ex}**: {e['n_working']} working sets, "
+                f"best {fmt_weight(e['best_weight'])} × {e['best_reps']} reps"
+            )
+        extra_section = "\n".join(extra_lines)
+
+    report = f"""# Weekly Training Report — Week {week_number} of 8
+**Generated: {report_date}** | Period: {week_start} → {week_end}
+*Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
 
-## ⚡ Quick Snapshot
+## ⚡ Priority Lifts — At a Glance
 
-| Metric | Target | Actual | Status |
+| Lift | W{week_number} Target | Actual | Status |
 |---|---|---|---|
-| Training sessions | 5 | {sessions_completed} | {sessions_status} |
-| Total working sets | 99–122 | {total_sets} | {"✅ On target" if 99 <= total_sets <= 135 else "⚠️ Check volume" if total_sets > 135 else "❌ Below target"} |
-| Bench Press — Heavy | {bh_kg}kg × {bh_sets}×{bh_reps} | {f"{bh['best_weight_kg']}kg × {bh['total_working_sets']}×{bh['best_reps']}" if bh else "No data"} | {bh_status} |
-| Bench Press — Volume | {bv_kg}kg × {bv_sets}×{bv_reps} | {f"{bv['best_weight_kg']}kg × {bv['total_working_sets']}×{bv['best_reps']}" if bv else "No data"} | {bv_status} |
-| Weighted Pull Up | {pu_kg}kg × {pu_sets}×{pu_reps} | {f"{pull_up['best_weight_kg']}kg × {pull_up['total_working_sets']}×{pull_up['best_reps']}" if pull_up else "No data"} | {pu_status} |
-| Daily protein (training) | 240g | ⏳ Add from MFP | — |
-| Daily calories (training) | ~2,900 kcal | ⏳ Add from MFP | — |
-| MFP logged days | 7 | ⏳ Add manually | — |
-| Sleep score avg | 78+ | ⏳ Add from Samsung | — |
-| Physical recovery avg | 80%+ | ⏳ Add from Samsung | — |
-| Body weight (7-day avg) | On track | ⏳ Add from Samsung | — |
-| Skeletal muscle | Trending up | ⏳ Add from Samsung | — |
+| Bench Press (Heavy) ⭐ | {target_str("Bench Press (Barbell)", week_number, "heavy")} | {bench_actual} | {bench_emoji} |
+| Weighted Pull Up (Heavy) ⭐ | {target_str("Pull Up (Weighted)", week_number, "heavy")} | {pu_actual} | {pu_emoji} |
+| Leg Press ⭐ | {target_str("Leg Press (Machine)", week_number, "both")} | {lp_actual} | {lp_emoji} |
+| Seated Leg Curl ⭐ | {target_str("Seated Leg Curl (Machine)", week_number, "both")} | {lc_actual} | {lc_emoji} |
+
+**Sessions completed:** {sessions}/5 | **Total working sets:** {total_sets} | {vol_status}
 
 ---
 
-## 🏋️ Training Detail
+## 📋 Sessions This Week
 
-### Sessions This Week
-{chr(10).join(workout_list) if workout_list else "- No sessions recorded this week"}
+{chr(10).join(workout_lines) if workout_lines else "- No sessions recorded this week"}
 
-### Priority Lifts
-| Exercise | Best Weight | Sets×Reps | Date |
-|---|---|---|---|
-{chr(10).join(exercise_lines) if exercise_lines else "| No data | — | — | — |"}
+---
 
-### All Other Exercises
-| Exercise | Best Weight | Sets×Reps |
-|---|---|---|
-{chr(10).join(other_lines) if other_lines else "| No data | — | — |"}
+## 🏋️ Full Exercise Breakdown — Every Exercise vs Every Target
+
+> ⭐ Priority | ✅ Hit | ⚠️ Close/partial | ❌ Missed | 🚀 Ahead | 📝 No target set
+
+{exercise_section(push_chest,     "PUSH — Chest",               grouped, week_number)}
+
+{exercise_section(push_shoulders, "PUSH — Shoulders",           grouped, week_number)}
+
+{exercise_section(push_triceps,   "PUSH — Triceps",             grouped, week_number)}
+
+{exercise_section(pull_back,      "PULL — Back",                grouped, week_number)}
+
+{exercise_section(pull_rear,      "PULL — Rear Delt & Face Pull", grouped, week_number)}
+
+{exercise_section(pull_biceps,    "PULL — Biceps & Traps",      grouped, week_number)}
+
+{exercise_section(legs_quads,     "LEGS — Quads",               grouped, week_number)}
+
+{exercise_section(legs_hams,      "LEGS — Hamstrings & Glutes", grouped, week_number)}
+
+{exercise_section(legs_calves,    "LEGS — Calves",              grouped, week_number)}
+
+{exercise_section(core_ex,        "CORE",                       grouped, week_number)}
+
+{extra_section}
 
 ---
 
 ## 🍗 Nutrition
-*To be populated from MFP — fill in manually at check-in or add MFP automation*
+*Fill in at check-in — MFP weekly summary*
 
-- **Average daily calories:** [ADD]
-- **Average daily protein:** [ADD]g
+- **Avg daily calories:** [ADD] kcal  *(target: ~2,900 training / ~2,450 rest)*
+- **Avg daily protein:** [ADD]g  *(target: 240g training / 210g rest)*
 - **Days logged in MFP:** [ADD]/7
-- **Lowest protein day:** [ADD] — [ADD]g on [ADD DAY]
-- **Any crash days (under 1,500 kcal)?** [YES/NO]
-- **Both shakes hit every day?** [YES/NO]
+- **Lowest protein day:** [ADD]g on [ADD DAY]
+- **Crash days under 1,500 kcal?** [YES/NO]
+- **Both shakes every day?** [YES/NO]
 
 ---
 
 ## 😴 Sleep & Recovery
-*To be populated from Samsung Health — screenshot weekly summary and add below*
+*Fill in at check-in — Samsung Health weekly summary screenshot*
 
-- **Average sleep score:** [ADD] / 100
-- **Average physical recovery:** [ADD]%
-- **Average HRV:** [ADD] ms
-- **Average resting HR:** [ADD] bpm
-- **Average sleep duration:** [ADD] hours
-- **Worst night (score + reason if known):** [ADD]
-- **Sunday bedtime this week:** [ADD]
+- **Avg sleep score:** [ADD] / 100  *(target: 78+)*
+- **Avg physical recovery:** [ADD]%  *(target: 80%+)*
+- **Avg HRV:** [ADD] ms
+- **Avg resting HR:** [ADD] bpm
+- **Avg sleep duration:** [ADD] hours
+- **Worst night:** [ADD] — score [ADD]
+- **Sunday bedtime:** [ADD]
 - **Snoring flagged?** [YES/NO]
 
 ---
 
 ## ⚖️ Body Composition
-*To be populated from Samsung Health daily weigh-in data*
+*Fill in at check-in — Samsung Health daily weigh-in + body scan*
 
-- **7-day average weight:** [ADD] kg
-- **Body fat % (latest scan):** [ADD]%
-- **Skeletal muscle (latest scan):** [ADD] kg
-- **Direction vs last week:** [UP/DOWN/FLAT]
-
----
-
-## 📊 Week {week_number} Bible Targets Reference
-
-| Exercise | This Week Target | Next Week Target |
-|---|---|---|
-| Bench Press — Heavy | {bh_kg}kg × {bh_sets}×{bh_reps} | {WEEKLY_TARGETS.get(week_number+1, targets)[0]}kg × {WEEKLY_TARGETS.get(week_number+1, targets)[1]}×{WEEKLY_TARGETS.get(week_number+1, targets)[2]} |
-| Bench Press — Volume | {bv_kg}kg × {bv_sets}×{bv_reps} | {WEEKLY_TARGETS.get(week_number+1, targets)[3]}kg × {WEEKLY_TARGETS.get(week_number+1, targets)[4]}×{WEEKLY_TARGETS.get(week_number+1, targets)[5]} |
-| Weighted Pull Up | {pu_kg}kg × {pu_sets}×{pu_reps} | {WEEKLY_TARGETS.get(week_number+1, targets)[6]}kg × {WEEKLY_TARGETS.get(week_number+1, targets)[7]}×{WEEKLY_TARGETS.get(week_number+1, targets)[8]} |
+- **7-day avg weight:** [ADD] kg  *(baseline: 86.0 kg)*
+- **Body fat %:** [ADD]%  *(baseline: 18.4%)*
+- **Skeletal muscle:** [ADD] kg  *(baseline: 38.4 kg — target: UP)*
+- **Direction vs last week:** [UP / DOWN / FLAT]
 
 ---
-*Report generated: {datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")} | Source: Hevy API (automatic) + manual inputs*
+*Auto-generated: {datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")} | Source: Hevy API*
 """
-
     return report
 
 
-def save_report(report, week_number):
-    """Save the report to the weekly_reports directory."""
-    now = datetime.now(timezone.utc)
-    iso_week = now.isocalendar()
-    filename = f"{iso_week[0]}_W{iso_week[1]:02d}_week{week_number}_of_programme.md"
-    filepath = REPO_ROOT / "weekly_reports" / filename
-    filepath.parent.mkdir(parents=True, exist_ok=True)
-    filepath.write_text(report, encoding="utf-8")
-    print(f"Report saved: {filepath}")
-    return filepath
+# ── Sync state ──────────────────────────────────────────────────
+
+def load_last_sync():
+    if LAST_SYNC_FILE.exists():
+        return datetime.fromisoformat(
+            json.loads(LAST_SYNC_FILE.read_text()).get("last_sync")
+        )
+    return datetime.now(timezone.utc) - timedelta(days=7)
 
 
-def save_raw_data(workouts, week_number):
-    """Save raw workout JSON for debugging."""
-    now = datetime.now(timezone.utc)
-    iso_week = now.isocalendar()
-    filename = f"{iso_week[0]}_W{iso_week[1]:02d}_hevy_raw.json"
-    filepath = REPO_ROOT / "data" / filename
-    filepath.parent.mkdir(parents=True, exist_ok=True)
-    filepath.write_text(
-        json.dumps(workouts, indent=2, default=str),
-        encoding="utf-8"
+def save_last_sync():
+    LAST_SYNC_FILE.parent.mkdir(parents=True, exist_ok=True)
+    LAST_SYNC_FILE.write_text(
+        json.dumps({"last_sync": datetime.now(timezone.utc).isoformat()}, indent=2)
     )
-    print(f"Raw data saved: {filepath}")
+
+
+# ── File I/O ────────────────────────────────────────────────────
+
+def save_report(report, week_number):
+    now = datetime.now(timezone.utc)
+    iso = now.isocalendar()
+    fname = f"{iso[0]}_W{iso[1]:02d}_week{week_number}_of_programme.md"
+    path = REPO_ROOT / "weekly_reports" / fname
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(report, encoding="utf-8")
+    print(f"Report saved: {fname}")
+    return path
+
+
+def save_raw(workouts, label):
+    now = datetime.now(timezone.utc)
+    iso = now.isocalendar()
+    fname = f"{iso[0]}_W{iso[1]:02d}_{label}_raw.json"
+    path = REPO_ROOT / "data" / fname
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(workouts, indent=2, default=str), encoding="utf-8")
+
+
+# ── Main ────────────────────────────────────────────────────────
+
+def run_weekly():
+    print("Mode: WEEKLY REPORT")
+    week = get_current_week()
+    print(f"Programme week: {week}/8")
+    since = datetime.now(timezone.utc) - timedelta(days=7)
+    workouts = fetch_workouts_since(since)
+    print(f"Workouts: {len(workouts)}")
+    save_raw(workouts, "weekly")
+    report = generate_report(workouts, week)
+    save_report(report, week)
+    save_last_sync()
+    print("Done")
+
+
+def run_sync():
+    print("Mode: INCREMENTAL SYNC")
+    last = load_last_sync()
+    print(f"Last sync: {last.strftime('%Y-%m-%d %H:%M UTC')}")
+    new = fetch_workouts_since(last)
+    print(f"New workouts: {len(new)}")
+
+    if not new:
+        print("No new data — nothing to update")
+        # Signal to Actions that no commit is needed
+        env_file = os.environ.get("GITHUB_OUTPUT", "")
+        if env_file:
+            with open(env_file, "a") as f:
+                f.write("new_data=false\n")
+        return
+
+    print("New workout detected — regenerating report")
+    week = get_current_week()
+    since = datetime.now(timezone.utc) - timedelta(days=7)
+    all_workouts = fetch_workouts_since(since)
+    save_raw(all_workouts, "sync")
+    report = generate_report(all_workouts, week)
+    save_report(report, week)
+    save_last_sync()
+
+    env_file = os.environ.get("GITHUB_OUTPUT", "")
+    if env_file:
+        with open(env_file, "a") as f:
+            f.write("new_data=true\n")
+    print("Done")
 
 
 def main():
-    print(f"{'='*50}")
-    print(f"Fitness Tracker — Weekly Report Generator")
-    print(f"{'='*50}")
-
-    week_number = get_current_week()
-    print(f"Programme week: {week_number} of 8")
-
-    try:
-        workouts = fetch_workouts_this_week()
-        print(f"Found {len(workouts)} workouts this week")
-
-        save_raw_data(workouts, week_number)
-
-        report = generate_report(workouts, week_number)
-        report_path = save_report(report, week_number)
-
-        print(f"\n✅ Report generated successfully")
-        print(f"File: {report_path.name}")
-        print(f"\nNext steps:")
-        print(f"  1. Open the report and fill in the [ADD] fields from MFP and Samsung Health")
-        print(f"  2. Paste the report URL to Claude for your PT check-in")
-
-    except ValueError as e:
-        print(f"❌ Config error: {e}")
-        print("Make sure HEVY_API_KEY is set as an environment variable")
-        raise
-    except requests.HTTPError as e:
-        print(f"❌ Hevy API error: {e}")
-        print("Check your API key at hevy.com/settings?developer")
-        raise
-    except Exception as e:
-        print(f"❌ Unexpected error: {e}")
-        raise
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--mode", choices=["weekly", "sync"], default="weekly")
+    args = parser.parse_args()
+    if args.mode == "sync":
+        run_sync()
+    else:
+        run_weekly()
 
 
 if __name__ == "__main__":

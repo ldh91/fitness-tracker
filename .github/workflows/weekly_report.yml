@@ -1,26 +1,46 @@
-name: Weekly Fitness Report
+name: Fitness Tracker
 
 on:
-  # Run automatically every Sunday at 20:00 UTC
+  # ── Full weekly report — every Sunday at 20:00 UTC ──────────
   schedule:
-    - cron: '0 20 * * 0'
+    - cron: '0 20 * * 0'   # Sunday 20:00 UTC — full weekly report
 
-  # Also allow manual trigger from GitHub Actions tab
+    # ── Real-time sync — check for new workouts ───────────────
+    # Weekdays: check at 08:30 and 09:30 UTC (covers 06:30-07:30 BST gym)
+    - cron: '30 8 * * 1-5'  # Weekdays 08:30 UTC
+    - cron: '30 9 * * 1-5'  # Weekdays 09:30 UTC (backup)
+    # Weekends: check at 09:00 and 10:00 UTC (covers later start)
+    - cron: '0 9 * * 6,0'   # Sat/Sun 09:00 UTC
+    - cron: '0 10 * * 6,0'  # Sat/Sun 10:00 UTC (backup)
+
+  # ── Manual trigger from GitHub Actions tab ───────────────────
   workflow_dispatch:
     inputs:
-      reason:
-        description: 'Reason for manual run'
-        required: false
-        default: 'Manual check-in'
+      mode:
+        description: 'Run mode'
+        required: true
+        default: 'sync'
+        type: choice
+        options:
+          - sync
+          - weekly
 
 jobs:
-  generate-report:
+  # ════════════════════════════════════════════════════════════
+  # JOB 1: Real-time sync (all scheduled runs except Sunday 20:00)
+  # ════════════════════════════════════════════════════════════
+  sync-check:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Needed to commit the report back to the repo
+      contents: write
+    # Run on weekday/weekend sync schedules and manual sync trigger
+    # Skip on Sunday 20:00 (that's handled by the weekly job)
+    if: |
+      (github.event_name == 'schedule' && github.event.schedule != '0 20 * * 0') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'sync')
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -29,20 +49,55 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install requests
+        run: pip install requests
 
-      - name: Generate weekly report
+      - name: Check for new workouts
+        id: sync
         env:
           HEVY_API_KEY: ${{ secrets.HEVY_API_KEY }}
-        run: |
-          python scripts/fetch_hevy.py
+        run: python scripts/fetch_hevy.py --mode sync
 
-      - name: Commit and push report
+      - name: Commit updated report (only if new data found)
+        if: steps.sync.outputs.new_data == 'true'
         run: |
           git config --local user.email "fitness-tracker[bot]@users.noreply.github.com"
           git config --local user.name "Fitness Tracker Bot"
           git add weekly_reports/ data/
-          # Only commit if there are changes
+          git diff --staged --quiet || git commit -m "Auto-sync: new workout detected $(date +'%Y-%m-%d %H:%M UTC')"
+          git push
+
+  # ════════════════════════════════════════════════════════════
+  # JOB 2: Full weekly report (Sunday 20:00 UTC only)
+  # ════════════════════════════════════════════════════════════
+  weekly-report:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    if: |
+      (github.event_name == 'schedule' && github.event.schedule == '0 20 * * 0') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'weekly')
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate weekly report
+        env:
+          HEVY_API_KEY: ${{ secrets.HEVY_API_KEY }}
+        run: python scripts/fetch_hevy.py --mode weekly
+
+      - name: Commit report
+        run: |
+          git config --local user.email "fitness-tracker[bot]@users.noreply.github.com"
+          git config --local user.name "Fitness Tracker Bot"
+          git add weekly_reports/ data/
           git diff --staged --quiet || git commit -m "Weekly report — $(date +'%Y-W%V') [automated]"
           git push
