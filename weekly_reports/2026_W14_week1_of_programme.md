@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 1 of 8
-**Generated: 30 March 2026** | Period: 2026-03-23 → 2026-03-30
+**Generated: 31 March 2026** | Period: 2026-03-24 → 2026-03-31
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -13,7 +13,7 @@
 | Leg Press ⭐ | 4×12 @ 150.0kg | 3×12 @ 150.0kg | ⚠️ |
 | Seated Leg Curl ⭐ | 3×12 @ 100.0kg | 3×10 @ 100.0kg | ⚠️ |
 
-**Sessions completed:** 8/5 | **Total working sets:** 94 | ❌ Below target
+**Sessions completed:** 10/5 | **Total working sets:** 130 | ✅ On target
 
 ---
 
@@ -27,6 +27,8 @@
 - **2026-03-28** — Legs (0 min, 6 exercises)
 - **2026-03-30** — Push day pull up primer (0 min, 1 exercises)
 - **2026-03-30** — Push (Mondays) (0 min, 9 exercises)
+- **2026-03-31** — Pull pull up primer (0 min, 3 exercises)
+- **2026-03-31** — Pull (Heavy) (0 min, 10 exercises)
 
 ---
 
@@ -105,6 +107,7 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-03-27 | Back/Biceps/Traps | 3×6 @ 5.0kg | 3×8 @ 5.0kg | ✅ Target hit | S1: 5.0kg×8  |  S2: 5.0kg×6  |  S3: 5.0kg×5 |
+| 2026-03-31 | Pull (Heavy) | 3×6 @ 5.0kg | 3×8 @ 5.0kg | ✅ Target hit | S1: 5.0kg×8  |  S2: 5.0kg×7  |  S3: 5.0kg×5 |
 
 #### Pull Up
 > ⚠️ Drop sets after weighted — sub-maximal, never to failure
@@ -115,6 +118,8 @@
 | 2026-03-27 | Back/Biceps/Traps | 3×5 @ BW | 3×6 @ BW | ✅ Target hit | S1: BW×6  |  S2: BW×6  |  S3: BW×5 |
 | 2026-03-27 | Pull day pull up primer | 3×5 @ BW | 2×3 @ BW | ⚠️ Sets short: 2/3 | S1: BW×3  |  S2: BW×3 |
 | 2026-03-30 | Push day pull up primer | 3×5 @ BW | 2×6 @ BW | ⚠️ Sets short: 2/3 | S1: BW×6  |  S2: BW×5 |
+| 2026-03-31 | Pull (Heavy) | 3×5 @ BW | 3×6 @ BW | ✅ Target hit | S1: BW×6  |  S2: BW×6  |  S3: BW×6 |
+| 2026-03-31 | Pull pull up primer | 3×5 @ BW | 2×3 @ BW | ⚠️ Sets short: 2/3 | S1: BW×3  |  S2: BW×3 |
 
 #### Chin Up
 | Date | Session | Target | Actual | Status | All Sets |
@@ -125,6 +130,7 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-03-27 | Back/Biceps/Traps | 3×10 @ 85.0kg | 3×9 @ 85.0kg | ⚠️ 1 rep short of target on best set — very close | S1: 85.0kg×9  |  S2: 85.0kg×8  |  S3: 80.0kg×8 |
+| 2026-03-31 | Pull (Heavy) | 3×10 @ 85.0kg | 3×10 @ 85.0kg | ✅ Target hit | S1: 85.0kg×10  |  S2: 85.0kg×10  |  S3: 85.0kg×8 |
 
 #### Seated Cable Row - Bar Grip
 | Session | Target | Actual | Status |
@@ -144,6 +150,7 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-03-27 | Back/Biceps/Traps | 3×12 @ 63.0kg | 3×11 @ 63.0kg | ⚠️ 1 rep short of target on best set — very close | S1: 63.0kg×11  |  S2: 63.0kg×10  |  S3: 63.0kg×10 |
+| 2026-03-31 | Pull (Heavy) | 3×12 @ 63.0kg | 3×12 @ 63.0kg | ✅ Target hit | S1: 63.0kg×12  |  S2: 63.0kg×12  |  S3: 63.0kg×10 |
 
 #### Face Pull (Cable)
 > ⚠️ Never ego lift — light, high reps, external rotation focus
@@ -160,11 +167,12 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-03-27 | Back/Biceps/Traps | 3×10 @ 12.5kg | 3×12 @ 12.5kg | ✅ Target hit | S1: 12.5kg×12  |  S2: 12.5kg×9  |  S3: 12.5kg×9 |
+| 2026-03-31 | Pull (Heavy) | 3×10 @ 12.5kg | 3×12 @ 12.5kg | ✅ Target hit | S1: 12.5kg×12  |  S2: 12.5kg×10  |  S3: 12.5kg×10 |
 
 #### Hammer Curl (Dumbbell)
-| Session | Target | Actual | Status |
-|---|---|---|---|
-| — | 3×10 @ 15.0kg | Not logged | ❌ Missing |
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-03-31 | Pull (Heavy) | 3×10 @ 15.0kg | 3×8 @ 15.0kg | ⚠️ Reps short: 8 vs 10 target on best set | S1: 15.0kg×8  |  S2: 15.0kg×7  |  S3: 15.0kg×6 |
 
 #### Reverse Curl (Barbell)
 | Session | Target | Actual | Status |
@@ -175,6 +183,7 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-03-27 | Back/Biceps/Traps | 3×12 @ 40.0kg | 3×12 @ 40.0kg | ✅ Target hit | S1: 40.0kg×12  |  S2: 40.0kg×12  |  S3: 40.0kg×12 |
+| 2026-03-31 | Pull (Heavy) | 3×12 @ 40.0kg | 3×12 @ 40.0kg | ✅ Target hit | S1: 40.0kg×12  |  S2: 40.0kg×12  |  S3: 40.0kg×12 |
 
 
 ### LEGS — Quads
@@ -243,6 +252,7 @@
 |---|---|---|---|---|---|
 | 2026-03-27 | Pull day pull up primer | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 23s  |  S2: 20s |
 | 2026-03-28 | Leg day pull up primer | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 55s  |  S2: 52s |
+| 2026-03-31 | Pull pull up primer | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 21s |
 
 #### Scapular Pull Ups
 > ⚠️ Primer — shoulder activation
@@ -250,11 +260,14 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-03-27 | Pull day pull up primer | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5  |  S2: BW×5 |
+| 2026-03-31 | Pull pull up primer | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5  |  S2: BW×5 |
 
 
 ### Extra Exercises (not in programme)
 
-- **Dead Bug**: 2 working sets, best BW × 8 reps
+- **Face Pull**: 3 working sets, best 25.0kg × 15 reps
+- **Cable Core Palloff Press**: 3 working sets, best 15.0kg × 12 reps
+- **Dead Bug**: 3 working sets, best BW × 8 reps
 - **Romanian Deadlift (Barbell)**: 1 working sets, best 40.0kg × 9 reps
 
 ---
@@ -294,4 +307,4 @@
 - **Direction vs last week:** [UP / DOWN / FLAT]
 
 ---
-*Auto-generated: 2026-03-30 11:42 UTC | Source: Hevy API*
+*Auto-generated: 2026-03-31 11:34 UTC | Source: Hevy API*
