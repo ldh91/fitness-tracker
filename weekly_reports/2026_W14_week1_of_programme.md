@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 1 of 8
-**Generated: 01 April 2026** | Period: 2026-03-25 → 2026-04-01
+**Generated: 02 April 2026** | Period: 2026-03-26 → 2026-04-02
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -13,14 +13,12 @@
 | Leg Press ⭐ | 4×12 @ 150.0kg | 4×12 @ 150.0kg | ✅ |
 | Seated Leg Curl ⭐ | 3×12 @ 100.0kg | 2×12 @ 100.0kg | ⚠️ |
 
-**Sessions completed:** 12/5 | **Total working sets:** 156 | ⚠️ High — watch recovery
+**Sessions completed:** 13/5 | **Total working sets:** 166 | ⚠️ High — watch recovery
 
 ---
 
 ## 📋 Sessions This Week
 
-- **2026-03-26** — Push day pull up primer (0 min, 1 exercises)
-- **2026-03-26** — Chest/Triceps/Shoulders (0 min, 6 exercises)
 - **2026-03-27** — Pull day pull up primer (0 min, 3 exercises)
 - **2026-03-27** — Back/Biceps/Traps (0 min, 7 exercises)
 - **2026-03-28** — Leg day pull up primer (0 min, 1 exercises)
@@ -31,6 +29,9 @@
 - **2026-03-31** — Pull (Heavy) (0 min, 10 exercises)
 - **2026-04-01** — Leg pull up primer (0 min, 1 exercises)
 - **2026-04-01** — Legs (0 min, 9 exercises)
+- **2026-04-02** — Push pull up primer (0 min, 1 exercises)
+- **2026-04-02** — Push (Volume) (0 min, 7 exercises)
+- **2026-04-02** — Push core (0 min, 2 exercises)
 
 ---
 
@@ -46,18 +47,19 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-03-30 | Push (Mondays) | 4×5 @ 65.0kg | 4×5 @ 65.0kg | ✅ Target hit | S1: 65.0kg×5  |  S2: 65.0kg×5  |  S3: 65.0kg×5  |  S4: 65.0kg×5 |
+| 2026-04-02 | Push (Volume) | 3×10 @ 55.0kg | 3×11 @ 55.0kg | ✅ Target hit | S1: 55.0kg×10  |  S2: 55.0kg×11  |  S3: 55.0kg×11 |
 
 #### Iso-Lateral Chest Press (Machine)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-03-26 | Chest/Triceps/Shoulders | 3×10 @ 50.0kg | 3×10 @ 50.0kg | ✅ Target hit | S1: 50.0kg×10  |  S2: 50.0kg×10  |  S3: 50.0kg×8 |
 | 2026-03-30 | Push (Mondays) | 3×10 @ 50.0kg | 3×10 @ 50.0kg | ✅ Target hit | S1: 50.0kg×10  |  S2: 50.0kg×8  |  S3: 50.0kg×6 |
+| 2026-04-02 | Push (Volume) | 3×12 @ 45.0kg | 3×10 @ 45.0kg | ⚠️ Reps short: 10 vs 12 target on best set | S1: 45.0kg×10  |  S2: 45.0kg×7  |  S3: 40.0kg×6 |
 
 #### Chest Fly (Machine)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-03-26 | Chest/Triceps/Shoulders | 3×12 @ 77.0kg | 3×11 @ 77.0kg | ⚠️ 1 rep short of target on best set — very close | S1: 77.0kg×11  |  S2: 77.0kg×10  |  S3: 77.0kg×10 |
 | 2026-03-30 | Push (Mondays) | 3×12 @ 77.0kg | 3×12 @ 77.0kg | ✅ Target hit | S1: 77.0kg×12  |  S2: 77.0kg×11  |  S3: 77.0kg×11 |
+| 2026-04-02 | Push (Volume) | 3×15 @ 70.0kg | 3×15 @ 70.0kg | ✅ Target hit | S1: 68.0kg×15  |  S2: 70.0kg×13  |  S3: 70.0kg×13 |
 
 
 ### PUSH — Shoulders
@@ -66,14 +68,14 @@
 #### Shoulder Press (Machine Plates)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-03-26 | Chest/Triceps/Shoulders | 4×10 @ 20.0kg | 3×10 @ 20.0kg | ⚠️ Sets short: 3/4 | S1: 20.0kg×10  |  S2: 20.0kg×9  |  S3: 20.0kg×8 |
 | 2026-03-30 | Push (Mondays) | 4×10 @ 20.0kg | 3×10 @ 20.0kg | ⚠️ Sets short: 3/4 | S1: 20.0kg×10  |  S2: 20.0kg×9  |  S3: 20.0kg×8 |
+| 2026-04-02 | Push (Volume) | 3×12 @ 17.5kg | 3×12 @ 15.0kg | ❌ Weight 2.5kg short (15.0kg vs 17.5kg) | S1: 15.0kg×12  |  S2: 15.0kg×11  |  S3: 15.0kg×11 |
 
 #### Lateral Raise (Machine)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-03-26 | Chest/Triceps/Shoulders | 3×12 @ 42.5kg | 3×10 @ 42.5kg | ⚠️ Reps short: 10 vs 12 target on best set | S1: 42.5kg×10  |  S2: 42.5kg×9  |  S3: 42.5kg×7 |
 | 2026-03-30 | Push (Mondays) | 3×12 @ 42.5kg | 3×12 @ 42.5kg | ✅ Target hit | S1: 42.5kg×12  |  S2: 42.5kg×12  |  S3: 42.5kg×10 |
+| 2026-04-02 | Push (Volume) | 4×12 @ 42.5kg | 4×12 @ 40.0kg | ❌ Weight 2.5kg short (40.0kg vs 42.5kg) | S1: 40.0kg×12  |  S2: 40.0kg×12  |  S3: 40.0kg×12  |  S4: 40.0kg×12 |
 
 #### Single Arm Lateral Raise (Cable)
 | Session | Target | Actual | Status |
@@ -87,14 +89,14 @@
 #### Triceps Dip
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-03-26 | Chest/Triceps/Shoulders | 3×12 @ BW | 3×12 @ BW | ✅ Target hit | S1: BW×12  |  S2: BW×11  |  S3: BW×9 |
 | 2026-03-30 | Push (Mondays) | 3×12 @ BW | 3×12 @ BW | ✅ Target hit | S1: BW×12  |  S2: BW×12  |  S3: BW×10 |
+| 2026-04-02 | Push (Volume) | 3×12 @ BW | 3×12 @ BW | ✅ Target hit | S1: BW×12  |  S2: BW×11  |  S3: BW×10 |
 
 #### Triceps Pushdown
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-03-26 | Chest/Triceps/Shoulders | 3×12 @ 60.0kg | 3×12 @ 60.0kg | ✅ Target hit | S1: 60.0kg×12  |  S2: 60.0kg×11  |  S3: 60.0kg×10 |
 | 2026-03-30 | Push (Mondays) | 3×12 @ 60.0kg | 3×12 @ 60.0kg | ✅ Target hit | S1: 60.0kg×12  |  S2: 60.0kg×12  |  S3: 60.0kg×11 |
+| 2026-04-02 | Push (Volume) | 3×12 @ 60.0kg | 3×15 @ 55.0kg | ❌ Weight 5.0kg short (55.0kg vs 60.0kg) | S1: 55.0kg×15  |  S2: 55.0kg×12  |  S3: 55.0kg×10 |
 
 #### Single Arm Triceps Pushdown (Cable)
 | Session | Target | Actual | Status |
@@ -116,12 +118,12 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-03-26 | Push day pull up primer | 3×5 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5  |  S2: BW×5 |
 | 2026-03-27 | Back/Biceps/Traps | 3×5 @ BW | 3×6 @ BW | ✅ Target hit | S1: BW×6  |  S2: BW×6  |  S3: BW×5 |
 | 2026-03-27 | Pull day pull up primer | 3×5 @ BW | 2×3 @ BW | ⚠️ Sets short: 2/3 | S1: BW×3  |  S2: BW×3 |
 | 2026-03-30 | Push day pull up primer | 3×5 @ BW | 2×6 @ BW | ⚠️ Sets short: 2/3 | S1: BW×6  |  S2: BW×5 |
 | 2026-03-31 | Pull (Heavy) | 3×5 @ BW | 3×6 @ BW | ✅ Target hit | S1: BW×6  |  S2: BW×6  |  S3: BW×6 |
 | 2026-03-31 | Pull pull up primer | 3×5 @ BW | 2×3 @ BW | ⚠️ Sets short: 2/3 | S1: BW×3  |  S2: BW×3 |
+| 2026-04-02 | Push pull up primer | 3×5 @ BW | 2×6 @ BW | ⚠️ Sets short: 2/3 | S1: BW×6  |  S2: BW×6 |
 
 #### Chin Up
 | Date | Session | Target | Actual | Status | All Sets |
@@ -252,6 +254,7 @@
 |---|---|---|---|---|---|
 | 2026-03-30 | Push (Mondays) | 3×40s @ BW | 2×0 @ BW | ⚠️ Sets short: 2/3 | S1: 43s  |  S2: 43s |
 | 2026-04-01 | Legs | 3×40s @ BW | 3×0 @ BW | ✅ Target hit | S1: 46s  |  S2: 46s  |  S3: 46s |
+| 2026-04-02 | Push core | 3×40s @ BW | 3×0 @ BW | ✅ Target hit | S1: 46s  |  S2: 47s  |  S3: 48s |
 
 #### Dead Hang
 > ⚠️ Primer — spine decompression
@@ -274,11 +277,11 @@
 
 ### Extra Exercises (not in programme)
 
+- **Dead Bug**: 3 working sets, best BW × 8 reps
 - **Cable Pull Through**: 3 working sets, best 15.0kg × 12 reps
 - **Hanging Knee Raise**: 3 working sets, best BW × 10 reps
 - **Face Pull**: 3 working sets, best 25.0kg × 15 reps
 - **Cable Core Palloff Press**: 3 working sets, best 15.0kg × 12 reps
-- **Dead Bug**: 3 working sets, best BW × 8 reps
 - **Romanian Deadlift (Barbell)**: 1 working sets, best 40.0kg × 9 reps
 
 ---
@@ -318,4 +321,4 @@
 - **Direction vs last week:** [UP / DOWN / FLAT]
 
 ---
-*Auto-generated: 2026-04-01 11:38 UTC | Source: Hevy API*
+*Auto-generated: 2026-04-02 11:29 UTC | Source: Hevy API*
