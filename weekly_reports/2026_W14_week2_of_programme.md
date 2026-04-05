@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 2 of 8
-**Generated: 04 April 2026** | Period: 2026-03-28 → 2026-04-04
+**Generated: 05 April 2026** | Period: 2026-03-29 → 2026-04-05
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -8,12 +8,12 @@
 
 | Lift | W2 Target | Actual | Status |
 |---|---|---|---|
-| Bench Press (Heavy) ⭐ | 4×5 @ 65.0kg | 4×5 @ 65.0kg | ✅ |
+| Bench Press (Heavy) ⭐ | 4×5 @ 65.0kg | 4×6 @ 67.5kg | 🚀 |
 | Weighted Pull Up (Heavy) ⭐ | 3×7 @ 5.0kg | 3×6 @ 5.0kg | ✅ |
 | Leg Press ⭐ | 4×12 @ 150.0kg | 4×12 @ 150.0kg | ✅ |
 | Seated Leg Curl ⭐ | 3×12 @ 100.0kg | 2×12 @ 100.0kg | ⚠️ |
 
-**Sessions completed:** 11/5 | **Total working sets:** 154 | ⚠️ High — watch recovery
+**Sessions completed:** 13/5 | **Total working sets:** 185 | ⚠️ High — watch recovery
 
 ---
 
@@ -30,6 +30,8 @@
 - **2026-04-02** — Push core (0 min, 2 exercises)
 - **2026-04-04** — Pull pull up primer (0 min, 3 exercises)
 - **2026-04-04** — Pull (Volume) (0 min, 10 exercises)
+- **2026-04-05** — Push pull up primer (0 min, 1 exercises)
+- **2026-04-05** — Push (Heavy) (0 min, 9 exercises)
 
 ---
 
@@ -46,18 +48,21 @@
 |---|---|---|---|---|---|
 | 2026-03-30 | Push (Mondays) | 4×5 @ 65.0kg | 4×5 @ 65.0kg | ✅ Target hit | S1: 65.0kg×5 | S2: 65.0kg×5 | S3: 65.0kg×5 | S4: 65.0kg×5 |
 | 2026-04-02 | Push (Volume) | 3×10 @ 55.0kg | 3×11 @ 55.0kg | ✅ Target hit | S1: 55.0kg×10 | S2: 55.0kg×11 | S3: 55.0kg×11 |
+| 2026-04-05 | Push (Heavy) | 4×5 @ 65.0kg | 4×6 @ 67.5kg | 🚀 Ahead — 67.5kg vs 65.0kg target | S1: 65.0kg×6 | S2: 65.0kg×6 | S3: 65.0kg×6 | S4: 67.5kg×5 |
 
 #### Iso-Lateral Chest Press (Machine)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-03-30 | Push (Mondays) | 3×10 @ 50.0kg | 3×10 @ 50.0kg | ✅ Target hit | S1: 50.0kg×10 | S2: 50.0kg×8 | S3: 50.0kg×6 |
 | 2026-04-02 | Push (Volume) | 3×12 @ 45.0kg | 3×10 @ 45.0kg | ⚠️ Reps short: 10 vs 12 target on best set | S1: 45.0kg×10 | S2: 45.0kg×7 | S3: 40.0kg×6 |
+| 2026-04-05 | Push (Heavy) | 3×10 @ 50.0kg | 3×10 @ 50.0kg | ✅ Target hit | S1: 50.0kg×10 | S2: 50.0kg×10 | S3: 50.0kg×7 |
 
 #### Chest Fly (Machine)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-03-30 | Push (Mondays) | 3×12 @ 77.0kg | 3×12 @ 77.0kg | ✅ Target hit | S1: 77.0kg×12 | S2: 77.0kg×11 | S3: 77.0kg×11 |
 | 2026-04-02 | Push (Volume) | 3×15 @ 70.0kg | 3×15 @ 70.0kg | ✅ Target hit | S1: 68.0kg×15 | S2: 70.0kg×13 | S3: 70.0kg×13 |
+| 2026-04-05 | Push (Heavy) | 3×12 @ 77.0kg | 3×12 @ 77.0kg | ✅ Target hit | S1: 77.0kg×12 | S2: 77.0kg×12 | S3: 77.0kg×9 |
 
 ### PUSH — Shoulders
 
@@ -67,12 +72,14 @@
 |---|---|---|---|---|---|
 | 2026-03-30 | Push (Mondays) | 4×10 @ 20.0kg | 3×10 @ 20.0kg | ⚠️ Sets short: 3/4 | S1: 20.0kg×10 | S2: 20.0kg×9 | S3: 20.0kg×8 |
 | 2026-04-02 | Push (Volume) | 3×12 @ 17.5kg | 3×12 @ 15.0kg | ❌ Weight 2.5kg short (15.0kg vs 17.5kg) | S1: 15.0kg×12 | S2: 15.0kg×11 | S3: 15.0kg×11 |
+| 2026-04-05 | Push (Heavy) | 4×10 @ 20.0kg | 4×10 @ 20.0kg | ✅ Target hit | S1: 20.0kg×10 | S2: 20.0kg×10 | S3: 20.0kg×8 | S4: 20.0kg×7 |
 
 #### Lateral Raise (Machine)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-03-30 | Push (Mondays) | 3×12 @ 42.5kg | 3×12 @ 42.5kg | ✅ Target hit | S1: 42.5kg×12 | S2: 42.5kg×12 | S3: 42.5kg×10 |
 | 2026-04-02 | Push (Volume) | 4×12 @ 42.5kg | 4×12 @ 40.0kg | ❌ Weight 2.5kg short (40.0kg vs 42.5kg) | S1: 40.0kg×12 | S2: 40.0kg×12 | S3: 40.0kg×12 | S4: 40.0kg×12 |
+| 2026-04-05 | Push (Heavy) | 3×12 @ 42.5kg | 3×12 @ 42.5kg | ✅ Target hit | S1: 42.5kg×12 | S2: 42.5kg×12 | S3: 42.5kg×11 |
 
 #### Single Arm Lateral Raise (Cable)
 | Session | Target | Actual | Status |
@@ -87,12 +94,14 @@
 |---|---|---|---|---|---|
 | 2026-03-30 | Push (Mondays) | 3×12 @ BW | 3×12 @ BW | ✅ Target hit | S1: BW×12 | S2: BW×12 | S3: BW×10 |
 | 2026-04-02 | Push (Volume) | 3×12 @ BW | 3×12 @ BW | ✅ Target hit | S1: BW×12 | S2: BW×11 | S3: BW×10 |
+| 2026-04-05 | Push (Heavy) | 3×12 @ BW | 3×13 @ BW | ✅ Target hit | S1: BW×13 | S2: BW×11 | S3: BW×10 |
 
 #### Triceps Pushdown
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-03-30 | Push (Mondays) | 3×12 @ 60.0kg | 3×12 @ 60.0kg | ✅ Target hit | S1: 60.0kg×12 | S2: 60.0kg×12 | S3: 60.0kg×11 |
 | 2026-04-02 | Push (Volume) | 3×12 @ 60.0kg | 3×15 @ 55.0kg | ❌ Weight 5.0kg short (55.0kg vs 60.0kg) | S1: 55.0kg×15 | S2: 55.0kg×12 | S3: 55.0kg×10 |
+| 2026-04-05 | Push (Heavy) | 3×12 @ 60.0kg | 3×12 @ 60.0kg | ✅ Target hit | S1: 60.0kg×12 | S2: 60.0kg×12 | S3: 60.0kg×11 |
 
 #### Single Arm Triceps Pushdown (Cable)
 | Session | Target | Actual | Status |
@@ -118,6 +127,7 @@
 | 2026-03-31 | Pull pull up primer | 3×6 @ BW | 2×3 @ BW | ⚠️ Sets short: 2/3 | S1: BW×3 | S2: BW×3 |
 | 2026-04-02 | Push pull up primer | 3×6 @ BW | 2×6 @ BW | ⚠️ Sets short: 2/3 | S1: BW×6 | S2: BW×6 |
 | 2026-04-04 | Pull pull up primer | 3×6 @ BW | 2×3 @ BW | ⚠️ Sets short: 2/3 | S1: BW×3 | S2: BW×3 |
+| 2026-04-05 | Push pull up primer | 3×6 @ BW | 2×6 @ BW | ⚠️ Sets short: 2/3 | S1: BW×6 | S2: BW×6 |
 
 #### Chin Up
 | Date | Session | Target | Actual | Status | All Sets |
@@ -239,6 +249,7 @@
 | 2026-03-30 | Push (Mondays) | 3×40s @ BW | 2×0 @ BW | ⚠️ Sets short: 2/3 | S1: 43s | S2: 43s |
 | 2026-04-01 | Legs | 3×40s @ BW | 3×0 @ BW | ✅ Target hit | S1: 46s | S2: 46s | S3: 46s |
 | 2026-04-02 | Push core | 3×40s @ BW | 3×0 @ BW | ✅ Target hit | S1: 46s | S2: 47s | S3: 48s |
+| 2026-04-05 | Push (Heavy) | 3×40s @ BW | 3×0 @ BW | ✅ Target hit | S1: 46s | S2: 46s | S3: 48s |
 
 #### Dead Hang
 > ⚠️ Primer — spine decompression
@@ -260,9 +271,9 @@
 
 ### Extra Exercises (not in programme)
 
+- **Dead Bug**: 3 working sets, best BW × 8 reps
 - **Face Pull**: 3 working sets, best 20.0kg × 20 reps
 - **Cable Core Palloff Press**: 3 working sets, best 15.0kg × 15 reps
-- **Dead Bug**: 3 working sets, best BW × 8 reps
 - **Cable Pull Through**: 3 working sets, best 15.0kg × 12 reps
 - **Hanging Knee Raise**: 3 working sets, best BW × 10 reps
 
@@ -301,4 +312,4 @@
 
 ---
 
-*Auto-generated: 2026-04-04 10:05 UTC | Source: Hevy API*
+*Auto-generated: 2026-04-05 10:06 UTC | Source: Hevy API*
