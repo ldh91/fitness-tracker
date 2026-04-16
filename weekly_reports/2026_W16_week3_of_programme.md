@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 3 of 8
-**Generated: 15 April 2026** | Period: 2026-04-08 → 2026-04-15
+**Generated: 16 April 2026** | Period: 2026-04-09 → 2026-04-16
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -10,10 +10,10 @@
 |---|---|---|---|
 | Bench Press (Heavy) ⭐ | 4×5 @ 67.5kg | 4×6 @ 67.5kg | ✅ |
 | Weighted Pull Up (Heavy) ⭐ | 3×8 @ 5.0kg | 3×7 @ 7.5kg | 🚀 |
-| Leg Press ⭐ | 4×11 @ 155.0kg | 3×12 @ 150.0kg | ❌ |
-| Seated Leg Curl ⭐ | 3×12 @ 102.5kg | 3×12 @ 95.0kg | ❌ |
+| Leg Press ⭐ | 4×11 @ 155.0kg | 3×10 @ 155.0kg | ⚠️ |
+| Seated Leg Curl ⭐ | 3×12 @ 102.5kg | 3×12 @ 100.0kg | ❌ |
 
-**Sessions completed:** 12/5 | **Total working sets:** 159 | ⚠️ High — watch recovery
+**Sessions completed:** 13/5 | **Total working sets:** 180 | ⚠️ High — watch recovery
 
 ---
 
@@ -31,6 +31,7 @@
 - **2026-04-14** — Push (Heavy) (0 min, 7 exercises)
 - **2026-04-15** — Pull pull up primer (0 min, 3 exercises)
 - **2026-04-15** — Pull (Heavy) (0 min, 9 exercises)
+- **2026-04-16** — Legs (0 min, 7 exercises)
 
 ---
 
@@ -189,11 +190,13 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-04-10 | Legs | 3×12 @ 70.0kg | 3×12 @ 65.0kg | ❌ Weight 5.0kg short (65.0kg vs 70.0kg) | S1: 65.0kg×12 | S2: 65.0kg×10 | S3: 65.0kg×8 |
+| 2026-04-16 | Legs | 3×12 @ 70.0kg | 3×12 @ 65.0kg | ❌ Weight 5.0kg short (65.0kg vs 70.0kg) | S1: 65.0kg×12 | S2: 65.0kg×12 | S3: 65.0kg×10 |
 
 #### Leg Press (Machine) ⭐
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-04-10 | Legs | 4×11 @ 155.0kg | 3×12 @ 150.0kg | ❌ Weight 5.0kg short (150.0kg vs 155.0kg) | S1: 150.0kg×12 | S2: 150.0kg×12 | S3: 150.0kg×12 |
+| 2026-04-16 | Legs | 4×11 @ 155.0kg | 3×10 @ 155.0kg | ⚠️ Sets short: 3/4 | S1: 155.0kg×10 | S2: 155.0kg×10 | S3: 155.0kg×10 |
 
 #### Bulgarian Split Squat
 > ⚠️ BW only weeks 1-2. Add DBs week 3 if pain-free. STOP if lower back twinges.
@@ -211,6 +214,7 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-04-10 | Legs | 3×12 @ 30.0kg | 3×12 @ 30.0kg | ✅ Target hit | S1: 30.0kg×12 | S2: 30.0kg×12 | S3: 30.0kg×12 |
+| 2026-04-16 | Legs | 3×12 @ 30.0kg | 3×12 @ 30.0kg | ✅ Target hit | S1: 30.0kg×12 | S2: 30.0kg×12 | S3: 30.0kg×12 |
 
 #### Cable Pull-Through
 | Session | Target | Actual | Status |
@@ -221,6 +225,7 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-04-10 | Legs | 3×12 @ 102.5kg | 3×12 @ 95.0kg | ❌ Weight 7.5kg short (95.0kg vs 102.5kg) | S1: 95.0kg×12 | S2: 95.0kg×12 | S3: 95.0kg×10 |
+| 2026-04-16 | Legs | 3×12 @ 102.5kg | 3×12 @ 100.0kg | ❌ Weight 2.5kg short (100.0kg vs 102.5kg) | S1: 100.0kg×12 | S2: 100.0kg×11 | S3: 100.0kg×10 |
 
 ### LEGS — Calves
 
@@ -229,6 +234,7 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-04-10 | Legs | 4×12 @ 125.0kg | 4×12 @ 120.0kg | ❌ Weight 5.0kg short (120.0kg vs 125.0kg) | S1: 120.0kg×12 | S2: 120.0kg×11 | S3: 120.0kg×10 | S4: 120.0kg×10 |
+| 2026-04-16 | Legs | 4×12 @ 125.0kg | 3×12 @ 120.0kg | ❌ Weight 5.0kg short (120.0kg vs 125.0kg) | S1: 120.0kg×12 | S2: 120.0kg×10 | S3: 120.0kg×10 |
 
 ### CORE
 
@@ -238,6 +244,7 @@
 |---|---|---|---|---|---|
 | 2026-04-10 | Legs | 3×45s @ BW | 3×0 @ BW | ✅ Target hit | S1: 56s | S2: 46s | S3: 46s |
 | 2026-04-11 | Morning workout ☀️ | 3×45s @ BW | 3×0 @ BW | ✅ Target hit | S1: 48s | S2: 47s | S3: 51s |
+| 2026-04-16 | Legs | 3×45s @ BW | 3×0 @ BW | ✅ Target hit | S1: 52s | S2: 48s | S3: 50s |
 
 #### Dead Hang
 > ⚠️ Primer — spine decompression
@@ -259,12 +266,12 @@
 
 ### Extra Exercises (not in programme)
 
+- **Hanging Knee Raise**: 3 working sets, best BW × 10 reps
 - **Face Pull**: 3 working sets, best 30.0kg × 15 reps
 - **Cable Core Palloff Press**: 3 working sets, best 30.0kg × 15 reps
 - **Dead Bug**: 3 working sets, best BW × 9 reps
 - **Triceps Dip (Weighted)**: 3 working sets, best 5.0kg × 9 reps
 - **Dead Hang Single Arm**: 3 working sets, best BW × 0 reps
-- **Hanging Knee Raise**: 3 working sets, best BW × 10 reps
 - **Cable Pull Through**: 3 working sets, best 15.0kg × 12 reps
 
 ---
@@ -302,4 +309,4 @@
 
 ---
 
-*Auto-generated: 2026-04-15 11:42 UTC | Source: Hevy API*
+*Auto-generated: 2026-04-16 11:45 UTC | Source: Hevy API*
