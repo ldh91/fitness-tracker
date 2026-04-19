@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 4 of 8
-**Generated: 18 April 2026** | Period: 2026-04-11 → 2026-04-18
+**Generated: 19 April 2026** | Period: 2026-04-12 → 2026-04-19
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -13,13 +13,12 @@
 | Leg Press ⭐ | 4×10 @ 160.0kg | 3×10 @ 155.0kg | ❌ |
 | Seated Leg Curl ⭐ | 3×12 @ 105.0kg | 3×12 @ 100.0kg | ❌ |
 
-**Sessions completed:** 10/5 | **Total working sets:** 153 | ⚠️ High — watch recovery
+**Sessions completed:** 9/5 | **Total working sets:** 139 | ⚠️ High — watch recovery
 
 ---
 
 ## 📋 Sessions This Week
 
-- **2026-04-12** — Morning workout ☀️ (0 min, 4 exercises)
 - **2026-04-13** — Pull pull up primer (0 min, 3 exercises)
 - **2026-04-13** — Pull (Volume) (0 min, 9 exercises)
 - **2026-04-14** — Push pull up primer (0 min, 1 exercises)
@@ -111,7 +110,6 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-04-12 | Morning workout ☀️ | 3×6 @ BW | 4×5 @ BW | ⚠️ 1 rep short of target on best set — very close | S1: BW×5 | S2: BW×5 | S3: BW×5 | S4: BW×5 |
 | 2026-04-13 | Pull pull up primer | 3×6 @ BW | 2×3 @ BW | ⚠️ Sets short: 2/3 | S1: BW×3 | S2: BW×3 |
 | 2026-04-14 | Push pull up primer | 3×6 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×3 |
 | 2026-04-15 | Pull (Heavy) | 3×6 @ BW | 3×6 @ BW | ✅ Target hit | S1: BW×6 | S2: BW×6 | S3: BW×6 |
@@ -121,7 +119,6 @@
 #### Chin Up
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-04-12 | Morning workout ☀️ | 3×4 @ BW | 4×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 | S3: BW×5 | S4: BW×5 |
 | 2026-04-13 | Pull (Volume) | 3×4 @ BW | 3×6 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 | S3: BW×6 |
 
 #### Iso-Lateral Row (Machine)
@@ -261,7 +258,6 @@
 - **Face Pull**: 3 working sets, best 30.0kg × 15 reps
 - **Cable Core Palloff Press**: 3 working sets, best 30.0kg × 15 reps
 - **Triceps Dip (Weighted)**: 3 working sets, best 5.0kg × 9 reps
-- **Dead Hang Single Arm**: 3 working sets, best BW × 0 reps
 
 ---
 
@@ -298,4 +294,4 @@
 
 ---
 
-*Auto-generated: 2026-04-18 11:07 UTC | Source: Hevy API*
+*Auto-generated: 2026-04-19 21:52 UTC | Source: Hevy API*
