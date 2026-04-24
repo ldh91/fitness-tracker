@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 4 of 8
-**Generated: 23 April 2026** | Period: 2026-04-16 → 2026-04-23
+**Generated: 24 April 2026** | Period: 2026-04-17 → 2026-04-24
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -10,10 +10,10 @@
 |---|---|---|---|
 | Bench Press (Heavy) ⭐ | 4×5 @ 67.5kg | 4×6 @ 67.5kg | ✅ |
 | Weighted Pull Up (Heavy) ⭐ | 3×5 @ 7.5kg | 3×8 @ 7.5kg | ✅ |
-| Leg Press ⭐ | 4×10 @ 160.0kg | ❌ Not logged | ❌ |
-| Seated Leg Curl ⭐ | 3×12 @ 105.0kg | ❌ Not logged | ❌ |
+| Leg Press ⭐ | 4×10 @ 160.0kg | 3×10 @ 160.0kg | ⚠️ |
+| Seated Leg Curl ⭐ | 3×12 @ 105.0kg | 3×13 @ 95.0kg | ❌ |
 
-**Sessions completed:** 8/5 | **Total working sets:** 115 | ✅ On target
+**Sessions completed:** 10/5 | **Total working sets:** 136 | ⚠️ High — watch recovery
 
 ---
 
@@ -27,6 +27,8 @@
 - **2026-04-22** — Push (Heavy) (0 min, 8 exercises)
 - **2026-04-23** — Pull pull up primer (0 min, 3 exercises)
 - **2026-04-23** — Pull (Heavy) (0 min, 7 exercises)
+- **2026-04-24** — Leg pull up primer (0 min, 1 exercises)
+- **2026-04-24** — Legs (0 min, 6 exercises)
 
 ---
 
@@ -179,14 +181,14 @@
 
 
 #### Leg Extension (Machine)
-| Session | Target | Actual | Status |
-|---|---|---|---|
-| — | 3×12 @ 70.0kg | Not logged | ❌ Missing |
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-04-24 | Legs | 3×12 @ 70.0kg | 3×12 @ 65.0kg | ❌ Weight 5.0kg short (65.0kg vs 70.0kg) | S1: 65.0kg×12 | S2: 65.0kg×11 | S3: 65.0kg×9 |
 
 #### Leg Press (Machine) ⭐
-| Session | Target | Actual | Status |
-|---|---|---|---|
-| — | 4×10 @ 160.0kg | Not logged | ❌ Missing |
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-04-24 | Legs | 4×10 @ 160.0kg | 3×10 @ 160.0kg | ⚠️ Sets short: 3/4 | S1: 140.0kg×10 | S2: 160.0kg×10 | S3: 160.0kg×10 |
 
 #### Bulgarian Split Squat
 > ⚠️ BW only weeks 1-2. Add DBs week 3 if pain-free. STOP if lower back twinges.
@@ -201,9 +203,9 @@
 #### Romanian Deadlift (Cable)
 > ⚠️ CABLE ONLY — never barbell. Hold 30kg for first 4 weeks regardless of feel.
 
-| Session | Target | Actual | Status |
-|---|---|---|---|
-| — | 3×12 @ 30.0kg | Not logged | ❌ Missing |
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-04-24 | Legs | 3×12 @ 30.0kg | 3×12 @ 30.0kg | ✅ Target hit | S1: 30.0kg×12 | S2: 30.0kg×12 | S3: 30.0kg×12 |
 
 #### Cable Pull-Through
 | Session | Target | Actual | Status |
@@ -211,17 +213,17 @@
 | — | 3×15 @ 27.5kg | Not logged | ❌ Missing |
 
 #### Seated Leg Curl (Machine) ⭐
-| Session | Target | Actual | Status |
-|---|---|---|---|
-| — | 3×12 @ 105.0kg | Not logged | ❌ Missing |
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-04-24 | Legs | 3×12 @ 105.0kg | 3×13 @ 95.0kg | ❌ Weight 10.0kg short (95.0kg vs 105.0kg) | S1: 95.0kg×13 | S2: 95.0kg×10 | S3: 95.0kg×10 |
 
 ### LEGS — Calves
 
 
 #### Standing Calf Raise (Machine)
-| Session | Target | Actual | Status |
-|---|---|---|---|
-| — | 4×12 @ 125.0kg | Not logged | ❌ Missing |
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-04-24 | Legs | 4×12 @ 125.0kg | 4×12 @ 120.0kg | ❌ Weight 5.0kg short (120.0kg vs 125.0kg) | S1: 120.0kg×12 | S2: 120.0kg×11 | S3: 120.0kg×10 | S4: 120.0kg×10 |
 
 ### CORE
 
@@ -238,6 +240,7 @@
 |---|---|---|---|---|---|
 | 2026-04-21 | Pull pull up primer | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 23s | S2: 29s |
 | 2026-04-23 | Pull pull up primer | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
+| 2026-04-24 | Leg pull up primer | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 51s | S2: 36s |
 
 #### Scapular Pull Ups
 > ⚠️ Primer — shoulder activation
@@ -250,6 +253,7 @@
 
 ### Extra Exercises (not in programme)
 
+- **Hanging Knee Raise**: 3 working sets, best BW × 10 reps
 - **Face Pull**: 3 working sets, best 30.0kg × 15 reps
 - **Hammer Curl (Cable)**: 3 working sets, best 20.0kg × 11 reps
 - **Cable Core Palloff Press**: 3 working sets, best 30.0kg × 12 reps
@@ -291,4 +295,4 @@
 
 ---
 
-*Auto-generated: 2026-04-23 12:06 UTC | Source: Hevy API*
+*Auto-generated: 2026-04-24 12:02 UTC | Source: Hevy API*
