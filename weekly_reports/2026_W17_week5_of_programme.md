@@ -292,4 +292,4 @@
 
 ---
 
-*Auto-generated: 2026-04-26 10:52 UTC | Source: Hevy API*
+*Auto-generated: 2026-04-26 21:55 UTC | Source: Hevy API*
