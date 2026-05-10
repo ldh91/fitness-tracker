@@ -10,10 +10,10 @@
 |---|---|---|---|
 | Bench Press (Heavy) ⭐ | 4×5 @ 72.5kg | ❌ Not logged | ❌ |
 | Weighted Pull Up (Heavy) ⭐ | 3×8 @ 7.5kg | 3×8 @ 7.5kg | ✅ |
-| Leg Press ⭐ | 4×11 @ 165.0kg | ❌ Not logged | ❌ |
-| Seated Leg Curl ⭐ | 3×12 @ 110.0kg | ❌ Not logged | ❌ |
+| Leg Press ⭐ | 4×11 @ 165.0kg | 3×10 @ 165.0kg | ⚠️ |
+| Seated Leg Curl ⭐ | 3×12 @ 110.0kg | 3×12 @ 95.0kg | ❌ |
 
-**Sessions completed:** 7/5 | **Total working sets:** 87 | ❌ Below target
+**Sessions completed:** 8/5 | **Total working sets:** 109 | ✅ On target
 
 ---
 
@@ -26,6 +26,7 @@
 - **2026-05-08** — Pull pull up primer (0 min, 3 exercises)
 - **2026-05-08** — Pull (Heavy) (0 min, 7 exercises)
 - **2026-05-10** — Leg pull up primer (0 min, 1 exercises)
+- **2026-05-10** — Legs (0 min, 7 exercises)
 
 ---
 
@@ -172,14 +173,14 @@
 
 
 #### Leg Extension (Machine)
-| Session | Target | Actual | Status |
-|---|---|---|---|
-| — | 3×12 @ 75.0kg | Not logged | ❌ Missing |
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-05-10 | Legs | 3×12 @ 75.0kg | 3×10 @ 67.5kg | ❌ Weight 7.5kg short (67.5kg vs 75.0kg) | S1: 67.5kg×10 | S2: 67.5kg×10 | S3: 67.5kg×8 |
 
 #### Leg Press (Machine) ⭐
-| Session | Target | Actual | Status |
-|---|---|---|---|
-| — | 4×11 @ 165.0kg | Not logged | ❌ Missing |
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-05-10 | Legs | 4×11 @ 165.0kg | 3×10 @ 165.0kg | ⚠️ Sets short: 3/4 | S1: 165.0kg×10 | S2: 165.0kg×10 | S3: 165.0kg×8 |
 
 #### Bulgarian Split Squat
 > ⚠️ BW only weeks 1-2. Add DBs week 3 if pain-free. STOP if lower back twinges.
@@ -194,9 +195,9 @@
 #### Romanian Deadlift (Cable)
 > ⚠️ CABLE ONLY — never barbell. Hold 30kg for first 4 weeks regardless of feel.
 
-| Session | Target | Actual | Status |
-|---|---|---|---|
-| — | 3×12 @ 35.0kg | Not logged | ❌ Missing |
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-05-10 | Legs | 3×12 @ 35.0kg | 3×10 @ 32.5kg | ❌ Weight 2.5kg short (32.5kg vs 35.0kg) | S1: 32.5kg×10 | S2: 32.5kg×10 | S3: 32.5kg×10 |
 
 #### Cable Pull-Through
 | Session | Target | Actual | Status |
@@ -204,17 +205,17 @@
 | — | 3×15 @ 32.5kg | Not logged | ❌ Missing |
 
 #### Seated Leg Curl (Machine) ⭐
-| Session | Target | Actual | Status |
-|---|---|---|---|
-| — | 3×12 @ 110.0kg | Not logged | ❌ Missing |
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-05-10 | Legs | 3×12 @ 110.0kg | 3×12 @ 95.0kg | ❌ Weight 15.0kg short (95.0kg vs 110.0kg) | S1: 95.0kg×12 | S2: 95.0kg×12 | S3: 95.0kg×10 |
 
 ### LEGS — Calves
 
 
 #### Standing Calf Raise (Machine)
-| Session | Target | Actual | Status |
-|---|---|---|---|
-| — | 4×12 @ 135.0kg | Not logged | ❌ Missing |
+| Date | Session | Target | Actual | Status | All Sets |
+|---|---|---|---|---|---|
+| 2026-05-10 | Legs | 4×12 @ 135.0kg | 4×11 @ 130.0kg | ❌ Weight 5.0kg short (130.0kg vs 135.0kg) | S1: 130.0kg×11 | S2: 130.0kg×9 | S3: 130.0kg×9 | S4: 130.0kg×8 |
 
 ### CORE
 
@@ -244,13 +245,14 @@
 
 ### Extra Exercises (not in programme)
 
+- **Hanging Knee Raise**: 3 working sets, best BW × 10 reps
+- **Dead Bug**: 3 working sets, best BW × 10 reps
 - **Seated Cable Row - V Grip (Cable)**: 3 working sets, best 50.0kg × 12 reps
 - **Face Pull**: 3 working sets, best 35.0kg × 15 reps
 - **Incline Chest Press (Machine)**: 3 working sets, best 30.0kg × 8 reps
 - **Triceps Dip (Weighted)**: 3 working sets, best 7.5kg × 11 reps
 - **Pull Up (Neutral Grip)**: 3 working sets, best BW × 5 reps
 - **Seated Row (Machine)**: 3 working sets, best 40.0kg × 12 reps
-- **Dead Bug**: 3 working sets, best BW × 10 reps
 
 ---
 
@@ -287,4 +289,4 @@
 
 ---
 
-*Auto-generated: 2026-05-10 10:03 UTC | Source: Hevy API*
+*Auto-generated: 2026-05-10 20:39 UTC | Source: Hevy API*
