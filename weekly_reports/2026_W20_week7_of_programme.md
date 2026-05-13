@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 7 of 8
-**Generated: 12 May 2026** | Period: 2026-05-05 → 2026-05-12
+**Generated: 13 May 2026** | Period: 2026-05-06 → 2026-05-13
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -13,7 +13,7 @@
 | Leg Press ⭐ | 4×11 @ 165.0kg | 3×10 @ 165.0kg | ⚠️ |
 | Seated Leg Curl ⭐ | 3×12 @ 110.0kg | 3×12 @ 95.0kg | ❌ |
 
-**Sessions completed:** 10/5 | **Total working sets:** 129 | ✅ On target
+**Sessions completed:** 11/5 | **Total working sets:** 139 | ⚠️ High — watch recovery
 
 ---
 
@@ -29,6 +29,7 @@
 - **2026-05-11** — Push (Volume) (0 min, 7 exercises)
 - **2026-05-12** — Pull pull up primer (0 min, 3 exercises)
 - **2026-05-12** — Pull (Volume) (0 min, 8 exercises)
+- **2026-05-13** — To the bar (0 min, 2 exercises)
 
 ---
 
@@ -115,12 +116,14 @@
 | 2026-05-08 | Pull pull up primer | 3×7 @ BW | 2×3 @ BW | ⚠️ Sets short: 2/3 | S1: BW×3 | S2: BW×3 |
 | 2026-05-11 | Push pull up primer | 3×7 @ BW | 2×6 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×6 |
 | 2026-05-12 | Pull pull up primer | 3×7 @ BW | 2×3 @ BW | ⚠️ Sets short: 2/3 | S1: BW×3 | S2: BW×3 |
+| 2026-05-13 | To the bar | 3×7 @ BW | 5×5 @ BW | ⚠️ Reps short: 5 vs 7 target on best set | S1: BW×5 | S2: BW×5 | S3: BW×5 | S4: BW×5 | S5: BW×5 |
 
 #### Chin Up
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-05-08 | Pull (Heavy) | 3×6 @ BW | 3×6 @ BW | ✅ Target hit | S1: BW×6 | S2: BW×6 | S3: BW×6 |
 | 2026-05-12 | Pull (Volume) | 3×6 @ BW | 3×5 @ BW | ⚠️ 1 rep short of target on best set — very close | S1: BW×5 | S2: BW×5 | S3: BW×5 |
+| 2026-05-13 | To the bar | 3×6 @ BW | 5×5 @ BW | ⚠️ 1 rep short of target on best set — very close | S1: BW×5 | S2: BW×5 | S3: BW×5 | S4: BW×5 | S5: BW×5 |
 
 #### Iso-Lateral Row (Machine)
 | Session | Target | Actual | Status |
@@ -296,4 +299,4 @@
 
 ---
 
-*Auto-generated: 2026-05-12 10:59 UTC | Source: Hevy API*
+*Auto-generated: 2026-05-13 11:08 UTC | Source: Hevy API*
