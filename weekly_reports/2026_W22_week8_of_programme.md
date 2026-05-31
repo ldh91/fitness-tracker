@@ -310,4 +310,4 @@
 
 ---
 
-*Auto-generated: 2026-05-31 10:49 UTC | Source: Hevy API*
+*Auto-generated: 2026-05-31 20:51 UTC | Source: Hevy API*
