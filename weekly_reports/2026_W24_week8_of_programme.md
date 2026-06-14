@@ -13,7 +13,7 @@
 | Leg Press ⭐ | 4×10 @ 170.0kg | 3×10 @ 180.0kg | 🚀 |
 | Seated Leg Curl ⭐ | 3×12 @ 110.0kg | ❌ Not logged | ❌ |
 
-**Sessions completed:** 8/5 | **Total working sets:** 128 | ✅ On target
+**Sessions completed:** 9/5 | **Total working sets:** 136 | ⚠️ High — watch recovery
 
 ---
 
@@ -27,6 +27,7 @@
 - **2026-06-13** — Pull (Heavy) (0 min, 6 exercises)
 - **2026-06-14** — Warm up (0 min, 5 exercises)
 - **2026-06-14** — Push (Volume) (0 min, 9 exercises)
+- **2026-06-14** — Arms (0 min, 2 exercises)
 
 ---
 
@@ -91,6 +92,7 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-06-08 | Push (Heavy) | 3×12 each side @ 27.5kg | 3×13 @ 30.0kg | 🚀 Ahead — 30.0kg vs 27.5kg target | S1: 23.0kg×13 | S2: 30.0kg×12 | S3: 30.0kg×12 |
+| 2026-06-14 | Arms | 3×12 each side @ 27.5kg | 4×20 @ 20.0kg | ❌ Weight 7.5kg short (20.0kg vs 27.5kg) | S1: 20.0kg×20 | S2: 20.0kg×20 | S3: 20.0kg×20 | S4: 20.0kg×20 |
 
 ### PULL — Back
 
@@ -153,6 +155,7 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-06-13 | Pull (Heavy) | 3×10 @ 15.0kg | 3×12 @ 15.0kg | ✅ Target hit | S1: 15.0kg×12 | S2: 15.0kg×10 | S3: 15.0kg×8 |
+| 2026-06-14 | Arms | 3×10 @ 15.0kg | 4×20 @ 10.0kg | ❌ Weight 5.0kg short (10.0kg vs 15.0kg) | S1: 10.0kg×20 | S2: 10.0kg×20 | S3: 10.0kg×20 | S4: 10.0kg×20 |
 
 #### Hammer Curl (Dumbbell)
 | Date | Session | Target | Actual | Status | All Sets |
@@ -293,4 +296,4 @@
 
 ---
 
-*Auto-generated: 2026-06-14 11:20 UTC | Source: Hevy API*
+*Auto-generated: 2026-06-14 21:01 UTC | Source: Hevy API*
