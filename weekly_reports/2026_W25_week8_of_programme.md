@@ -13,13 +13,12 @@
 | Leg Press ⭐ | 4×10 @ 170.0kg | 3×10 @ 190.0kg | 🚀 |
 | Seated Leg Curl ⭐ | 3×12 @ 110.0kg | ❌ Not logged | ❌ |
 
-**Sessions completed:** 8/5 | **Total working sets:** 114 | ✅ On target
+**Sessions completed:** 8/5 | **Total working sets:** 128 | ✅ On target
 
 ---
 
 ## 📋 Sessions This Week
 
-- **2026-06-14** — Arms (0 min, 2 exercises)
 - **2026-06-15** — Warm up (0 min, 4 exercises)
 - **2026-06-15** — Legs (0 min, 6 exercises)
 - **2026-06-17** — Warm up (0 min, 5 exercises)
@@ -27,6 +26,7 @@
 - **2026-06-18** — Warm up (0 min, 5 exercises)
 - **2026-06-18** — Push (Heavy) (0 min, 8 exercises)
 - **2026-06-21** — Warm up (0 min, 5 exercises)
+- **2026-06-21** — Legs (Garage) (0 min, 6 exercises)
 
 ---
 
@@ -85,9 +85,9 @@
 | 2026-06-18 | Push (Heavy) | 3×12 @ 67.5kg | 3×16 @ 65.0kg | ❌ Weight 2.5kg short (65.0kg vs 67.5kg) | S1: 65.0kg×16 | S2: 65.0kg×11 | S3: 65.0kg×11 |
 
 #### Single Arm Triceps Pushdown (Cable)
-| Date | Session | Target | Actual | Status | All Sets |
-|---|---|---|---|---|---|
-| 2026-06-14 | Arms | 3×12 each side @ 27.5kg | 4×20 @ 20.0kg | ❌ Weight 7.5kg short (20.0kg vs 27.5kg) | S1: 20.0kg×20 | S2: 20.0kg×20 | S3: 20.0kg×20 | S4: 20.0kg×20 |
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×12 each side @ 27.5kg | Not logged | ❌ Missing |
 
 ### PULL — Back
 
@@ -149,7 +149,6 @@
 #### Bicep Curl (Dumbbell)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-06-14 | Arms | 3×10 @ 15.0kg | 4×20 @ 10.0kg | ❌ Weight 5.0kg short (10.0kg vs 15.0kg) | S1: 10.0kg×20 | S2: 10.0kg×20 | S3: 10.0kg×20 | S4: 10.0kg×20 |
 | 2026-06-17 | Pull (Heavy) | 3×10 @ 15.0kg | 3×10 @ 15.0kg | ✅ Target hit | S1: 15.0kg×10 | S2: 15.0kg×10 | S3: 15.0kg×10 |
 
 #### Hammer Curl (Dumbbell)
@@ -174,6 +173,7 @@
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
 | 2026-06-15 | Legs | 3×12 @ 75.0kg | 3×12 @ 75.0kg | ✅ Target hit | S1: 75.0kg×12 | S2: 75.0kg×11 | S3: 75.0kg×10 |
+| 2026-06-21 | Legs (Garage) | 3×12 @ 75.0kg | 3×12 @ 70.0kg | ❌ Weight 5.0kg short (70.0kg vs 75.0kg) | S1: 60.0kg×12 | S2: 70.0kg×12 | S3: 70.0kg×11 |
 
 #### Leg Press (Machine) ⭐
 | Date | Session | Target | Actual | Status | All Sets |
@@ -246,6 +246,11 @@
 
 ### Extra Exercises (not in programme)
 
+- **Squat (Smith Machine)**: 5 working sets, best 40.0kg × 10 reps
+- **Romanian Deadlift (Barbell)**: 5 working sets, best 35.0kg × 12 reps
+- **Lying Leg Curl (Bench)**: 3 working sets, best 40.0kg × 12 reps
+- **Hanging Knee Raise**: 3 working sets, best BW × 12 reps
+- **Ab Wheel**: 3 working sets, best BW × 12 reps
 - **Squat (Bodyweight)**: 2 working sets, best BW × 10 reps
 - **Push Up**: 2 working sets, best BW × 10 reps
 - **Incline Chest Press (Machine)**: 4 working sets, best 35.0kg × 8 reps
@@ -254,7 +259,6 @@
 - **Seated Cable Row - V Grip (Cable)**: 3 working sets, best 57.0kg × 12 reps
 - **Face Pull**: 3 working sets, best 50.0kg × 13 reps
 - **Lying Leg Curl (Machine)**: 3 working sets, best 64.0kg × 12 reps
-- **Hanging Knee Raise**: 3 working sets, best BW × 12 reps
 
 ---
 
@@ -291,4 +295,4 @@
 
 ---
 
-*Auto-generated: 2026-06-21 11:36 UTC | Source: Hevy API*
+*Auto-generated: 2026-06-21 21:06 UTC | Source: Hevy API*
