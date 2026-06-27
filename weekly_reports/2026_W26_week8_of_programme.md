@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 8 of 8
-**Generated: 26 June 2026** | Period: 2026-06-19 → 2026-06-26
+**Generated: 27 June 2026** | Period: 2026-06-20 → 2026-06-27
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -13,7 +13,7 @@
 | Leg Press ⭐ | 4×10 @ 170.0kg | 3×10 @ 195.0kg | 🚀 |
 | Seated Leg Curl ⭐ | 3×12 @ 110.0kg | 3×13 @ 95.0kg | ❌ |
 
-**Sessions completed:** 8/5 | **Total working sets:** 118 | ✅ On target
+**Sessions completed:** 9/5 | **Total working sets:** 128 | ✅ On target
 
 ---
 
@@ -27,6 +27,7 @@
 - **2026-06-24** — Pull (Heavy) (0 min, 6 exercises)
 - **2026-06-26** — Warm up (0 min, 5 exercises)
 - **2026-06-26** — Legs (0 min, 6 exercises)
+- **2026-06-27** — Warm up (0 min, 5 exercises)
 
 ---
 
@@ -107,6 +108,7 @@
 | 2026-06-24 | Pull (Heavy) | 3×7 @ BW | 3×9 @ BW | ✅ Target hit | S1: BW×9 | S2: BW×7 | S3: BW×6 |
 | 2026-06-24 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-06-26 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
+| 2026-06-27 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 
 #### Chin Up
 | Session | Target | Actual | Status |
@@ -232,6 +234,7 @@
 | 2026-06-22 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 25s | S2: 20s |
 | 2026-06-24 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 25s | S2: 20s |
 | 2026-06-26 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
+| 2026-06-27 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 
 #### Scapular Pull Ups
 > ⚠️ Primer — shoulder activation
@@ -242,13 +245,14 @@
 | 2026-06-22 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-06-24 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-06-26 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
+| 2026-06-27 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 
 
 ### Extra Exercises (not in programme)
 
-- **Hanging Knee Raise**: 3 working sets, best BW × 10 reps
 - **Squat (Bodyweight)**: 2 working sets, best BW × 10 reps
 - **Push Up**: 2 working sets, best BW × 10 reps
+- **Hanging Knee Raise**: 3 working sets, best BW × 10 reps
 - **Seated Cable Row - V Grip (Cable)**: 3 working sets, best 65.0kg × 10 reps
 - **Face Pull**: 3 working sets, best 50.0kg × 14 reps
 - **Hammer Curl (Cable)**: 3 working sets, best 30.0kg × 15 reps
@@ -294,4 +298,4 @@
 
 ---
 
-*Auto-generated: 2026-06-26 11:24 UTC | Source: Hevy API*
+*Auto-generated: 2026-06-27 10:49 UTC | Source: Hevy API*
