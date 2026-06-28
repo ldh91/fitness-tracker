@@ -305,4 +305,4 @@
 
 ---
 
-*Auto-generated: 2026-06-28 10:55 UTC | Source: Hevy API*
+*Auto-generated: 2026-06-28 20:53 UTC | Source: Hevy API*
