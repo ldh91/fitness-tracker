@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 8 of 8
-**Generated: 14 July 2026** | Period: 2026-07-07 → 2026-07-14
+**Generated: 15 July 2026** | Period: 2026-07-08 → 2026-07-15
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -13,14 +13,12 @@
 | Leg Press ⭐ | 4×10 @ 170.0kg | 3×8 @ 200.0kg | 🚀 |
 | Seated Leg Curl ⭐ | 3×12 @ 110.0kg | 3×12 @ 95.0kg | ❌ |
 
-**Sessions completed:** 10/5 | **Total working sets:** 156 | ⚠️ High — watch recovery
+**Sessions completed:** 10/5 | **Total working sets:** 152 | ⚠️ High — watch recovery
 
 ---
 
 ## 📋 Sessions This Week
 
-- **2026-07-08** — Warm up (0 min, 5 exercises)
-- **2026-07-08** — Upper (Volume) (0 min, 8 exercises)
 - **2026-07-09** — Warm up (0 min, 5 exercises)
 - **2026-07-09** — Lower (Volume) (0 min, 5 exercises)
 - **2026-07-11** — Warm up (0 min, 5 exercises)
@@ -29,6 +27,8 @@
 - **2026-07-13** — Upper (Heavy) (0 min, 7 exercises)
 - **2026-07-14** — Warm up (0 min, 5 exercises)
 - **2026-07-14** — Lower (Heavy) (0 min, 5 exercises)
+- **2026-07-15** — Warm up (0 min, 5 exercises)
+- **2026-07-15** — Upper (Volume) (0 min, 7 exercises)
 
 ---
 
@@ -53,7 +53,7 @@
 #### Chest Fly (Machine)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-08 | Upper (Volume) | 3×15 @ 80.0kg | 3×15 @ 68.0kg | ❌ Weight 12.0kg short (68.0kg vs 80.0kg) | S1: 68.0kg×15 | S2: 68.0kg×15 | S3: 68.0kg×14 |
+| 2026-07-15 | Upper (Volume) | 3×15 @ 80.0kg | 3×15 @ 68.0kg | ❌ Weight 12.0kg short (68.0kg vs 80.0kg) | S1: 68.0kg×15 | S2: 68.0kg×15 | S3: 68.0kg×15 |
 
 ### PUSH — Shoulders
 
@@ -64,14 +64,14 @@
 | 2026-07-13 | Upper (Heavy) | 4×10 @ 25.0kg | 3×10 @ 30.0kg | 🚀 Ahead — 30.0kg vs 25.0kg target | S1: 30.0kg×10 | S2: 30.0kg×8 | S3: 30.0kg×6 |
 
 #### Lateral Raise (Machine)
-| Session | Target | Actual | Status |
-|---|---|---|---|
-| — | 3×12 @ 50.0kg | Not logged | ❌ Missing |
-
-#### Single Arm Lateral Raise (Cable)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-08 | Upper (Volume) | 3×12 each side @ 10.0kg | 3×10 @ 5.0kg | ❌ Weight 5.0kg short (5.0kg vs 10.0kg) | S1: 5.0kg×10 | S2: 5.0kg×8 | S3: 5.0kg×8 |
+| 2026-07-15 | Upper (Volume) | 4×12 @ 50.0kg | 2×14 @ 47.5kg | ❌ Weight 2.5kg short (47.5kg vs 50.0kg) | S1: 47.5kg×14 | S2: 47.5kg×13 |
+
+#### Single Arm Lateral Raise (Cable)
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×12 each side @ 10.0kg | Not logged | ❌ Missing |
 
 ### PUSH — Triceps
 
@@ -104,17 +104,17 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-08 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-07-09 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-07-11 | Saturdaze | 3×7 @ BW | 3×5 @ BW | ⚠️ Reps short: 5 vs 7 target on best set | S1: BW×5 | S2: BW×5 | S3: BW×5 |
 | 2026-07-11 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-07-13 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-07-14 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
+| 2026-07-15 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 
 #### Chin Up
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-08 | Upper (Volume) | 3×6 @ BW | 3×10 @ BW | ✅ Target hit | S1: BW×10 | S2: BW×10 | S3: BW×8 |
+| 2026-07-15 | Upper (Volume) | 3×6 @ BW | 3×10 @ BW | ✅ Target hit | S1: BW×10 | S2: BW×10 | S3: BW×8 |
 
 #### Iso-Lateral Row (Machine)
 | Session | Target | Actual | Status |
@@ -137,7 +137,7 @@
 #### Rear Delt Reverse Fly (Machine)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-08 | Upper (Volume) | 3×15 @ 70.0kg | 3×15 @ 63.0kg | ❌ Weight 7.0kg short (63.0kg vs 70.0kg) | S1: 63.0kg×15 | S2: 63.0kg×12 | S3: 63.0kg×11 |
+| 2026-07-15 | Upper (Volume) | 3×15 @ 70.0kg | 3×15 @ 63.0kg | ❌ Weight 7.0kg short (63.0kg vs 70.0kg) | S1: 63.0kg×15 | S2: 63.0kg×14 | S3: 63.0kg×12 |
 
 #### Face Pull (Cable)
 > ⚠️ Never ego lift — light, high reps, external rotation focus
@@ -233,28 +233,31 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-08 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-07-09 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-07-11 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-07-13 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-07-14 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
+| 2026-07-15 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 
 #### Scapular Pull Ups
 > ⚠️ Primer — shoulder activation
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-08 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-07-09 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-07-11 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-07-13 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-07-14 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
+| 2026-07-15 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 
 
 ### Extra Exercises (not in programme)
 
+- **Chest Press (Machine)**: 3 working sets, best 40.0kg × 13 reps
+- **Triceps Rope Pushdown**: 3 working sets, best 50.0kg × 15 reps
+- **Rope Cable Curl**: 3 working sets, best 40.0kg × 16 reps
 - **Squat (Bodyweight)**: 2 working sets, best BW × 10 reps
-- **Push Up**: 1 working sets, best BW × 10 reps
+- **Push Up**: 2 working sets, best BW × 10 reps
 - **Incline Chest Press (Machine)**: 3 working sets, best 40.0kg × 9 reps
 - **Seated Cable Row - V Grip (Cable)**: 3 working sets, best 65.0kg × 12 reps
 - **Triceps Dip (Weighted)**: 3 working sets, best 15.0kg × 11 reps
@@ -269,9 +272,6 @@
 - **Overhead Press (Barbell)**: 3 working sets, best 25.0kg × 10 reps
 - **Triceps Extension (Machine)**: 3 working sets, best 30.0kg × 15 reps
 - **Hip Thrust (Machine)**: 3 working sets, best 40.0kg × 12 reps
-- **Chest Press (Machine)**: 3 working sets, best 30.0kg × 12 reps
-- **Triceps Rope Pushdown**: 3 working sets, best 50.0kg × 15 reps
-- **Rope Cable Curl**: 3 working sets, best 40.0kg × 15 reps
 
 ---
 
@@ -308,4 +308,4 @@
 
 ---
 
-*Auto-generated: 2026-07-14 10:17 UTC | Source: Hevy API*
+*Auto-generated: 2026-07-15 10:21 UTC | Source: Hevy API*
