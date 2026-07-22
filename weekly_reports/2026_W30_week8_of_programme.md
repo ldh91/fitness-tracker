@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 8 of 8
-**Generated: 21 July 2026** | Period: 2026-07-14 → 2026-07-21
+**Generated: 22 July 2026** | Period: 2026-07-15 → 2026-07-22
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -13,20 +13,20 @@
 | Leg Press ⭐ | 4×10 @ 170.0kg | 3×6 @ 200.0kg | 🚀 |
 | Seated Leg Curl ⭐ | 3×12 @ 110.0kg | 3×12 @ 95.0kg | ❌ |
 
-**Sessions completed:** 8/5 | **Total working sets:** 117 | ✅ On target
+**Sessions completed:** 8/5 | **Total working sets:** 118 | ✅ On target
 
 ---
 
 ## 📋 Sessions This Week
 
-- **2026-07-15** — Warm up (0 min, 5 exercises)
-- **2026-07-15** — Upper (Volume) (0 min, 7 exercises)
 - **2026-07-16** — Warm up (0 min, 5 exercises)
 - **2026-07-16** — Lower (Volume) (0 min, 7 exercises)
 - **2026-07-20** — Warm up (0 min, 5 exercises)
 - **2026-07-20** — Upper (Heavy) (0 min, 7 exercises)
 - **2026-07-21** — Warm up (0 min, 4 exercises)
 - **2026-07-21** — Lower (Heavy) (0 min, 6 exercises)
+- **2026-07-22** — Warm up (0 min, 5 exercises)
+- **2026-07-22** — Upper (Volume) (0 min, 7 exercises)
 
 ---
 
@@ -51,7 +51,7 @@
 #### Chest Fly (Machine)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-15 | Upper (Volume) | 3×15 @ 80.0kg | 3×15 @ 68.0kg | ❌ Weight 12.0kg short (68.0kg vs 80.0kg) | S1: 68.0kg×15 | S2: 68.0kg×15 | S3: 68.0kg×15 |
+| 2026-07-22 | Upper (Volume) | 3×15 @ 80.0kg | 3×15 @ 68.0kg | ❌ Weight 12.0kg short (68.0kg vs 80.0kg) | S1: 68.0kg×15 | S2: 68.0kg×15 | S3: 68.0kg×14 |
 
 ### PUSH — Shoulders
 
@@ -64,7 +64,7 @@
 #### Lateral Raise (Machine)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-15 | Upper (Volume) | 4×12 @ 50.0kg | 2×14 @ 47.5kg | ❌ Weight 2.5kg short (47.5kg vs 50.0kg) | S1: 47.5kg×14 | S2: 47.5kg×13 |
+| 2026-07-22 | Upper (Volume) | 4×12 @ 50.0kg | 3×14 @ 47.5kg | ❌ Weight 2.5kg short (47.5kg vs 50.0kg) | S1: 47.5kg×14 | S2: 47.5kg×12 | S3: 47.5kg×12 |
 
 #### Single Arm Lateral Raise (Cable)
 | Session | Target | Actual | Status |
@@ -102,15 +102,15 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-15 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-07-16 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-07-20 | Warm up | 3×7 @ BW | 1×5 @ BW | ⚠️ Sets short: 1/3 | S1: BW×5 |
 | 2026-07-21 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
+| 2026-07-22 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 
 #### Chin Up
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-15 | Upper (Volume) | 3×6 @ BW | 3×10 @ BW | ✅ Target hit | S1: BW×10 | S2: BW×10 | S3: BW×8 |
+| 2026-07-22 | Upper (Volume) | 3×6 @ BW | 3×10 @ BW | ✅ Target hit | S1: BW×10 | S2: BW×9 | S3: BW×7 |
 
 #### Iso-Lateral Row (Machine)
 | Session | Target | Actual | Status |
@@ -133,7 +133,7 @@
 #### Rear Delt Reverse Fly (Machine)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-15 | Upper (Volume) | 3×15 @ 70.0kg | 3×15 @ 63.0kg | ❌ Weight 7.0kg short (63.0kg vs 70.0kg) | S1: 63.0kg×15 | S2: 63.0kg×14 | S3: 63.0kg×12 |
+| 2026-07-22 | Upper (Volume) | 3×15 @ 70.0kg | 3×15 @ 63.0kg | ❌ Weight 7.0kg short (63.0kg vs 70.0kg) | S1: 63.0kg×15 | S2: 63.0kg×13 | S3: 63.0kg×11 |
 
 #### Face Pull (Cable)
 > ⚠️ Never ego lift — light, high reps, external rotation focus
@@ -228,39 +228,38 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-15 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-07-16 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-07-20 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-07-21 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
+| 2026-07-22 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 
 #### Scapular Pull Ups
 > ⚠️ Primer — shoulder activation
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-15 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-07-16 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-07-20 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-07-21 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
+| 2026-07-22 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 
 
 ### Extra Exercises (not in programme)
 
+- **Chest Press (Machine)**: 3 working sets, best 40.0kg × 15 reps
+- **Triceps Rope Pushdown**: 3 working sets, best 45.0kg × 14 reps
+- **Bicep Curl (Cable)**: 3 working sets, best 40.0kg × 15 reps
+- **Squat (Bodyweight)**: 2 working sets, best BW × 10 reps
+- **Push Up**: 2 working sets, best BW × 10 reps
 - **Seated Calf Raise**: 3 working sets, best 50.0kg × 12 reps
 - **Hanging Knee Raise**: 3 working sets, best BW × 12 reps
-- **Squat (Bodyweight)**: 2 working sets, best BW × 10 reps
 - **Incline Chest Press (Machine)**: 3 working sets, best 40.0kg × 10 reps
 - **Seated Cable Row - V Grip (Cable)**: 3 working sets, best 72.0kg × 8 reps
 - **Triceps Dip (Weighted)**: 3 working sets, best 15.0kg × 8 reps
-- **Bicep Curl (Cable)**: 3 working sets, best 55.0kg × 9 reps
-- **Push Up**: 2 working sets, best BW × 10 reps
 - **Bulgarian Split Squat (Dumbbell)**: 3 working sets, best BW × 12 reps
 - **Hip Adduction (Machine)**: 4 working sets, best 20.0kg × 15 reps
 - **Hip Thrust (Machine)**: 3 working sets, best 50.0kg × 12 reps
 - **Hanging Leg Raise**: 3 working sets, best BW × 11 reps
-- **Chest Press (Machine)**: 3 working sets, best 40.0kg × 13 reps
-- **Triceps Rope Pushdown**: 3 working sets, best 50.0kg × 15 reps
-- **Rope Cable Curl**: 3 working sets, best 40.0kg × 16 reps
 
 ---
 
@@ -297,4 +296,4 @@
 
 ---
 
-*Auto-generated: 2026-07-21 10:38 UTC | Source: Hevy API*
+*Auto-generated: 2026-07-22 10:38 UTC | Source: Hevy API*
