@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 8 of 8
-**Generated: 22 July 2026** | Period: 2026-07-15 → 2026-07-22
+**Generated: 23 July 2026** | Period: 2026-07-16 → 2026-07-23
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -13,20 +13,20 @@
 | Leg Press ⭐ | 4×10 @ 170.0kg | 3×6 @ 200.0kg | 🚀 |
 | Seated Leg Curl ⭐ | 3×12 @ 110.0kg | 3×12 @ 95.0kg | ❌ |
 
-**Sessions completed:** 8/5 | **Total working sets:** 118 | ✅ On target
+**Sessions completed:** 8/5 | **Total working sets:** 117 | ✅ On target
 
 ---
 
 ## 📋 Sessions This Week
 
-- **2026-07-16** — Warm up (0 min, 5 exercises)
-- **2026-07-16** — Lower (Volume) (0 min, 7 exercises)
 - **2026-07-20** — Warm up (0 min, 5 exercises)
 - **2026-07-20** — Upper (Heavy) (0 min, 7 exercises)
 - **2026-07-21** — Warm up (0 min, 4 exercises)
 - **2026-07-21** — Lower (Heavy) (0 min, 6 exercises)
 - **2026-07-22** — Warm up (0 min, 5 exercises)
 - **2026-07-22** — Upper (Volume) (0 min, 7 exercises)
+- **2026-07-23** — Warm up (0 min, 5 exercises)
+- **2026-07-23** — Lower (Volume) (0 min, 7 exercises)
 
 ---
 
@@ -102,10 +102,10 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-16 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-07-20 | Warm up | 3×7 @ BW | 1×5 @ BW | ⚠️ Sets short: 1/3 | S1: BW×5 |
 | 2026-07-21 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-07-22 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
+| 2026-07-23 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 
 #### Chin Up
 | Date | Session | Target | Actual | Status | All Sets |
@@ -171,8 +171,8 @@
 #### Leg Extension (Machine)
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-16 | Lower (Volume) | 3×12 @ 75.0kg | 3×15 @ 70.0kg | ❌ Weight 5.0kg short (70.0kg vs 75.0kg) | S1: 70.0kg×15 | S2: 70.0kg×15 | S3: 70.0kg×13 |
 | 2026-07-21 | Lower (Heavy) | 3×12 @ 75.0kg | 3×10 @ 84.0kg | 🚀 Ahead — 84.0kg vs 75.0kg target | S1: 84.0kg×10 | S2: 84.0kg×10 | S3: 84.0kg×10 |
+| 2026-07-23 | Lower (Volume) | 3×12 @ 75.0kg | 3×15 @ 72.0kg | ❌ Weight 3.0kg short (72.0kg vs 75.0kg) | S1: 72.0kg×15 | S2: 72.0kg×14 | S3: 72.0kg×13 |
 
 #### Leg Press (Machine) ⭐
 | Date | Session | Target | Actual | Status | All Sets |
@@ -204,8 +204,8 @@
 #### Seated Leg Curl (Machine) ⭐
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-16 | Lower (Volume) | 3×12 @ 110.0kg | 3×15 @ 80.0kg | ❌ Weight 30.0kg short (80.0kg vs 110.0kg) | S1: 80.0kg×15 | S2: 80.0kg×15 | S3: 80.0kg×15 |
 | 2026-07-21 | Lower (Heavy) | 3×12 @ 110.0kg | 3×12 @ 95.0kg | ❌ Weight 15.0kg short (95.0kg vs 110.0kg) | S1: 95.0kg×12 | S2: 95.0kg×11 | S3: 95.0kg×10 |
+| 2026-07-23 | Lower (Volume) | 3×12 @ 110.0kg | 3×16 @ 80.0kg | ❌ Weight 30.0kg short (80.0kg vs 110.0kg) | S1: 80.0kg×15 | S2: 80.0kg×16 | S3: 80.0kg×14 |
 
 ### LEGS — Calves
 
@@ -228,38 +228,38 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-16 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-07-20 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-07-21 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-07-22 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
+| 2026-07-23 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 
 #### Scapular Pull Ups
 > ⚠️ Primer — shoulder activation
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-07-16 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-07-20 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-07-21 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-07-22 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
+| 2026-07-23 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 
 
 ### Extra Exercises (not in programme)
 
+- **Bulgarian Split Squat (Dumbbell)**: 3 working sets, best BW × 13 reps
+- **Hip Thrust (Machine)**: 3 working sets, best 60.0kg × 12 reps
+- **Hip Adduction (Machine)**: 3 working sets, best 25.0kg × 15 reps
+- **Seated Calf Raise**: 3 working sets, best 40.0kg × 15 reps
+- **Hanging Leg Raise**: 3 working sets, best BW × 12 reps
+- **Squat (Bodyweight)**: 2 working sets, best BW × 10 reps
+- **Push Up**: 2 working sets, best BW × 10 reps
 - **Chest Press (Machine)**: 3 working sets, best 40.0kg × 15 reps
 - **Triceps Rope Pushdown**: 3 working sets, best 45.0kg × 14 reps
 - **Bicep Curl (Cable)**: 3 working sets, best 40.0kg × 15 reps
-- **Squat (Bodyweight)**: 2 working sets, best BW × 10 reps
-- **Push Up**: 2 working sets, best BW × 10 reps
-- **Seated Calf Raise**: 3 working sets, best 50.0kg × 12 reps
 - **Hanging Knee Raise**: 3 working sets, best BW × 12 reps
 - **Incline Chest Press (Machine)**: 3 working sets, best 40.0kg × 10 reps
 - **Seated Cable Row - V Grip (Cable)**: 3 working sets, best 72.0kg × 8 reps
 - **Triceps Dip (Weighted)**: 3 working sets, best 15.0kg × 8 reps
-- **Bulgarian Split Squat (Dumbbell)**: 3 working sets, best BW × 12 reps
-- **Hip Adduction (Machine)**: 4 working sets, best 20.0kg × 15 reps
-- **Hip Thrust (Machine)**: 3 working sets, best 50.0kg × 12 reps
-- **Hanging Leg Raise**: 3 working sets, best BW × 11 reps
 
 ---
 
@@ -296,4 +296,4 @@
 
 ---
 
-*Auto-generated: 2026-07-22 10:38 UTC | Source: Hevy API*
+*Auto-generated: 2026-07-23 10:39 UTC | Source: Hevy API*
