@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 8 of 8
-**Generated: 25 July 2026** | Period: 2026-07-18 → 2026-07-25
+**Generated: 26 July 2026** | Period: 2026-07-19 → 2026-07-26
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -13,7 +13,7 @@
 | Leg Press ⭐ | 4×10 @ 170.0kg | 3×6 @ 200.0kg | 🚀 |
 | Seated Leg Curl ⭐ | 3×12 @ 110.0kg | 3×12 @ 95.0kg | ❌ |
 
-**Sessions completed:** 9/5 | **Total working sets:** 127 | ✅ On target
+**Sessions completed:** 10/5 | **Total working sets:** 152 | ⚠️ High — watch recovery
 
 ---
 
@@ -28,6 +28,7 @@
 - **2026-07-23** — Warm up (0 min, 5 exercises)
 - **2026-07-23** — Lower (Volume) (0 min, 7 exercises)
 - **2026-07-25** — Warm up (0 min, 5 exercises)
+- **2026-07-25** — Saturdaze (0 min, 8 exercises)
 
 ---
 
@@ -107,6 +108,7 @@
 | 2026-07-21 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-07-22 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-07-23 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
+| 2026-07-25 | Saturdaze | 3×7 @ BW | 4×7 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×6 | S3: BW×5 | S4: BW×7 |
 | 2026-07-25 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 
 #### Chin Up
@@ -250,6 +252,13 @@
 
 ### Extra Exercises (not in programme)
 
+- **Muscle Up (Band Assisted BW)**: 3 working sets, best 80.0kg × 6 reps
+- **Muscle Up (Negative BW)**: 3 working sets, best 80.0kg × 5 reps
+- **Dips (Straight Bar BW)**: 3 working sets, best 80.0kg × 8 reps
+- **Inverted Row**: 3 working sets, best BW × 12 reps
+- **Decline Push Up**: 3 working sets, best BW × 20 reps
+- **Bicep Curl (Barbell)**: 3 working sets, best 20.0kg × 15 reps
+- **Overhead Press (Barbell)**: 3 working sets, best 20.0kg × 12 reps
 - **Squat (Bodyweight)**: 2 working sets, best BW × 10 reps
 - **Push Up**: 2 working sets, best BW × 10 reps
 - **Bulgarian Split Squat (Dumbbell)**: 3 working sets, best BW × 13 reps
@@ -300,4 +309,4 @@
 
 ---
 
-*Auto-generated: 2026-07-25 10:18 UTC | Source: Hevy API*
+*Auto-generated: 2026-07-26 20:47 UTC | Source: Hevy API*
