@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 8 of 8
-**Generated: 21 August 2026** | Period: 2026-08-14 → 2026-08-21
+**Generated: 23 August 2026** | Period: 2026-08-16 → 2026-08-23
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -13,14 +13,12 @@
 | Leg Press ⭐ | 4×10 @ 170.0kg | 3×10 @ 100.0kg | ❌ |
 | Seated Leg Curl ⭐ | 3×12 @ 110.0kg | ❌ Not logged | ❌ |
 
-**Sessions completed:** 8/5 | **Total working sets:** 118 | ✅ On target
+**Sessions completed:** 6/5 | **Total working sets:** 83 | ❌ Below target
 
 ---
 
 ## 📋 Sessions This Week
 
-- **2026-08-15** — Warm up (0 min, 5 exercises)
-- **2026-08-15** — Saturdaze (0 min, 9 exercises)
 - **2026-08-17** — Warm up (0 min, 5 exercises)
 - **2026-08-17** — Upper (Heavy) (0 min, 5 exercises)
 - **2026-08-19** — Warm up (0 min, 5 exercises)
@@ -75,9 +73,9 @@
 
 
 #### Triceps Dip
-| Date | Session | Target | Actual | Status | All Sets |
-|---|---|---|---|---|---|
-| 2026-08-15 | Saturdaze | 3×12 @ 10.0kg | 3×15 @ BW | ❌ Weight 10.0kg short (0.0kg vs 10.0kg) | S1: BW×15 | S2: BW×14 | S3: BW×10 |
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×12 @ 10.0kg | Not logged | ❌ Missing |
 
 #### Triceps Pushdown
 | Session | Target | Actual | Status |
@@ -102,17 +100,15 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-08-15 | Saturdaze | 3×7 @ BW | 3×8 @ BW | ✅ Target hit | S1: BW×6 | S2: BW×6 | S3: BW×8 |
-| 2026-08-15 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-08-17 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-08-19 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-08-21 | Saturdaze | 3×7 @ BW | 3×8 @ BW | ✅ Target hit | S1: BW×8 | S2: BW×8 | S3: BW×7 |
 | 2026-08-21 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 
 #### Chin Up
-| Date | Session | Target | Actual | Status | All Sets |
-|---|---|---|---|---|---|
-| 2026-08-15 | Saturdaze | 3×6 @ BW | 3×6 @ BW | ✅ Target hit | S1: BW×6 | S2: BW×6 | S3: BW×6 |
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×6 @ BW | Not logged | ❌ Missing |
 
 #### Iso-Lateral Row (Machine)
 | Session | Target | Actual | Status |
@@ -228,7 +224,6 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-08-15 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-08-17 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-08-19 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-08-21 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
@@ -238,7 +233,6 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-08-15 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-08-17 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-08-19 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-08-21 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
@@ -261,8 +255,6 @@
 - **Incline Chest Press (Machine)**: 3 working sets, best 40.0kg × 9 reps
 - **Seated Cable Row - V Grip (Cable)**: 3 working sets, best 72.0kg × 11 reps
 - **Triceps Dip (Weighted)**: 3 working sets, best 15.0kg × 10 reps
-- **Wide Pull Up**: 3 working sets, best BW × 6 reps
-- **Dips (Straight Bar BW)**: 3 working sets, best 80.0kg × 10 reps
 
 ---
 
@@ -299,4 +291,4 @@
 
 ---
 
-*Auto-generated: 2026-08-21 09:08 UTC | Source: Hevy API*
+*Auto-generated: 2026-08-23 20:12 UTC | Source: Hevy API*
