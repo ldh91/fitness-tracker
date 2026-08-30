@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 8 of 8
-**Generated: 26 August 2026** | Period: 2026-08-19 → 2026-08-26
+**Generated: 30 August 2026** | Period: 2026-08-23 → 2026-08-30
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -13,14 +13,12 @@
 | Leg Press ⭐ | 4×10 @ 170.0kg | ❌ Not logged | ❌ |
 | Seated Leg Curl ⭐ | 3×12 @ 110.0kg | ❌ Not logged | ❌ |
 
-**Sessions completed:** 4/5 | **Total working sets:** 53 | ❌ Below target
+**Sessions completed:** 2/5 | **Total working sets:** 25 | ❌ Below target
 
 ---
 
 ## 📋 Sessions This Week
 
-- **2026-08-21** — Warm up (0 min, 5 exercises)
-- **2026-08-21** — Saturdaze (0 min, 6 exercises)
 - **2026-08-26** — Warm up (0 min, 5 exercises)
 - **2026-08-26** — Upper (Heavy) (0 min, 5 exercises)
 
@@ -98,8 +96,6 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-08-21 | Saturdaze | 3×7 @ BW | 3×8 @ BW | ✅ Target hit | S1: BW×8 | S2: BW×8 | S3: BW×7 |
-| 2026-08-21 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-08-26 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 
 #### Chin Up
@@ -221,7 +217,6 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-08-21 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-08-26 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 
 #### Scapular Pull Ups
@@ -229,7 +224,6 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-08-21 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-08-26 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 
 
@@ -240,11 +234,6 @@
 - **Bicep Curl (Cable)**: 3 working sets, best 45.0kg × 12 reps
 - **Squat (Bodyweight)**: 2 working sets, best BW × 10 reps
 - **Push Up**: 2 working sets, best BW × 10 reps
-- **Inverted Row**: 3 working sets, best BW × 10 reps
-- **Romanian Deadlift (Barbell)**: 3 working sets, best 20.0kg × 8 reps
-- **Decline Push Up**: 3 working sets, best BW × 20 reps
-- **Bicep Curl (Barbell)**: 3 working sets, best 20.0kg × 12 reps
-- **Overhead Press (Barbell)**: 3 working sets, best 20.0kg × 12 reps
 
 ---
 
@@ -281,4 +270,4 @@
 
 ---
 
-*Auto-generated: 2026-08-26 09:12 UTC | Source: Hevy API*
+*Auto-generated: 2026-08-30 22:15 UTC | Source: Hevy API*
