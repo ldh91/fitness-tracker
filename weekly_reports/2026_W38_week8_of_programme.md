@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 8 of 8
-**Generated: 18 September 2026** | Period: 2026-09-11 → 2026-09-18
+**Generated: 20 September 2026** | Period: 2026-09-13 → 2026-09-20
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -13,13 +13,12 @@
 | Leg Press ⭐ | 4×10 @ 170.0kg | ❌ Not logged | ❌ |
 | Seated Leg Curl ⭐ | 3×12 @ 110.0kg | ❌ Not logged | ❌ |
 
-**Sessions completed:** 2/5 | **Total working sets:** 18 | ❌ Below target
+**Sessions completed:** 1/5 | **Total working sets:** 8 | ❌ Below target
 
 ---
 
 ## 📋 Sessions This Week
 
-- **2026-09-12** — Warm up (0 min, 5 exercises)
 - **2026-09-17** — Bodied (0 min, 2 exercises)
 
 ---
@@ -96,7 +95,6 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-09-12 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-09-17 | Bodied | 3×7 @ BW | 5×10 @ BW | ✅ Target hit | S1: BW×10 | S2: BW×10 | S3: BW×9 | S4: BW×7 | S5: BW×6 |
 
 #### Chin Up
@@ -216,22 +214,21 @@
 #### Dead Hang
 > ⚠️ Primer — spine decompression
 
-| Date | Session | Target | Actual | Status | All Sets |
-|---|---|---|---|---|---|
-| 2026-09-12 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 2×40s @ BW | Not logged | ❌ Missing |
 
 #### Scapular Pull Ups
 > ⚠️ Primer — shoulder activation
 
-| Date | Session | Target | Actual | Status | All Sets |
-|---|---|---|---|---|---|
-| 2026-09-12 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 2×5 @ BW | Not logged | ❌ Missing |
 
 
 ### Extra Exercises (not in programme)
 
 - **Push Up**: 3 working sets, best BW × 20 reps
-- **Squat (Bodyweight)**: 2 working sets, best BW × 10 reps
 
 ---
 
@@ -268,4 +265,4 @@
 
 ---
 
-*Auto-generated: 2026-09-18 13:05 UTC | Source: Hevy API*
+*Auto-generated: 2026-09-20 22:03 UTC | Source: Hevy API*
