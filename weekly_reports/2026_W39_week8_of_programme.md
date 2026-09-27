@@ -278,4 +278,4 @@
 
 ---
 
-*Auto-generated: 2026-09-27 14:20 UTC | Source: Hevy API*
+*Auto-generated: 2026-09-27 22:42 UTC | Source: Hevy API*
