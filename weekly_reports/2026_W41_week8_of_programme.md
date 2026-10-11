@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 8 of 8
-**Generated: 10 October 2026** | Period: 2026-10-03 → 2026-10-10
+**Generated: 11 October 2026** | Period: 2026-10-04 → 2026-10-11
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -299,4 +299,4 @@
 
 ---
 
-*Auto-generated: 2026-10-10 14:49 UTC | Source: Hevy API*
+*Auto-generated: 2026-10-11 23:19 UTC | Source: Hevy API*
