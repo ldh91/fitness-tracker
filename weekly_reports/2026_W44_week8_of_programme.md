@@ -307,4 +307,4 @@
 
 ---
 
-*Auto-generated: 2026-11-01 15:29 UTC | Source: Hevy API*
+*Auto-generated: 2026-11-01 23:15 UTC | Source: Hevy API*
