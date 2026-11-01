@@ -1,5 +1,486 @@
 [
   {
+    "id": "1407b609-413b-4fb6-b45e-478aa0c1425e",
+    "title": "Upper (Heavy)",
+    "routine_id": "aac130a8-93b6-4907-ab4f-2f429347b059",
+    "description": "",
+    "start_time": "2026-11-01T10:50:58+00:00",
+    "end_time": "2026-11-01T12:22:48+00:00",
+    "updated_at": "2026-11-01T12:22:50.346Z",
+    "created_at": "2026-11-01T12:22:50.346Z",
+    "exercises": [
+      {
+        "index": 0,
+        "title": "Pull Up (Weighted)",
+        "notes": null,
+        "exercise_template_id": "729237D1",
+        "superset_id": null,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 10,
+            "reps": 8,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 10,
+            "reps": 6,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 2,
+            "type": "normal",
+            "weight_kg": 10,
+            "reps": 6,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "title": "Pull Up",
+        "notes": null,
+        "exercise_template_id": "1B2B1E7C",
+        "superset_id": null,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 8,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 5,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "title": "Incline Bench Press (Barbell)",
+        "notes": null,
+        "exercise_template_id": "50DFDFAB",
+        "superset_id": null,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 20,
+            "reps": 10,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 40,
+            "reps": 10,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 2,
+            "type": "normal",
+            "weight_kg": 60,
+            "reps": 8,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 3,
+            "type": "normal",
+            "weight_kg": 60,
+            "reps": 8,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "title": "Seated Cable Row - V Grip (Cable)",
+        "notes": null,
+        "exercise_template_id": "0393F233",
+        "superset_id": null,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 60,
+            "reps": 12,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 65,
+            "reps": 12,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 2,
+            "type": "normal",
+            "weight_kg": 70,
+            "reps": 12,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "title": "Seated Shoulder Press (Machine)",
+        "notes": null,
+        "exercise_template_id": "9237BAD1",
+        "superset_id": null,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 55,
+            "reps": 8,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 55,
+            "reps": 8,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 2,
+            "type": "normal",
+            "weight_kg": 55,
+            "reps": 6,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "title": "Triceps Dip",
+        "notes": null,
+        "exercise_template_id": "28BB4A95",
+        "superset_id": null,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 15,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 20,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 2,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 12,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "title": "Preacher Curl (Barbell)",
+        "notes": null,
+        "exercise_template_id": "4F942934",
+        "superset_id": 0,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 22.5,
+            "reps": 10,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 27.5,
+            "reps": 11,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 2,
+            "type": "normal",
+            "weight_kg": 27.5,
+            "reps": 9,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "title": "Triceps Pushdown",
+        "notes": null,
+        "exercise_template_id": "93A552C6",
+        "superset_id": null,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 55,
+            "reps": 15,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 65,
+            "reps": 12,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 2,
+            "type": "normal",
+            "weight_kg": 65,
+            "reps": 12,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2b055965-b333-4cc3-ad5c-66387bbd92f6",
+    "title": "Warm up",
+    "routine_id": "65c247ed-607b-41d1-b846-258a2739506c",
+    "description": "",
+    "start_time": "2026-11-01T10:41:58+00:00",
+    "end_time": "2026-11-01T10:47:12+00:00",
+    "updated_at": "2026-11-01T10:47:13.758Z",
+    "created_at": "2026-11-01T10:47:13.758Z",
+    "exercises": [
+      {
+        "index": 0,
+        "title": "Scapular Pull Ups",
+        "notes": null,
+        "exercise_template_id": "C7AE420A",
+        "superset_id": null,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 5,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 5,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "title": "Dead Hang",
+        "notes": null,
+        "exercise_template_id": "B9380898",
+        "superset_id": null,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": null,
+            "distance_meters": 0,
+            "duration_seconds": 20,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": null,
+            "distance_meters": 0,
+            "duration_seconds": 20,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "title": "Pull Up",
+        "notes": null,
+        "exercise_template_id": "1B2B1E7C",
+        "superset_id": null,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 5,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 5,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "title": "Squat (Bodyweight)",
+        "notes": null,
+        "exercise_template_id": "9694DA61",
+        "superset_id": null,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 10,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 10,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "title": "Push Up",
+        "notes": null,
+        "exercise_template_id": "392887AA",
+        "superset_id": null,
+        "sets": [
+          {
+            "index": 0,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 10,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          },
+          {
+            "index": 1,
+            "type": "normal",
+            "weight_kg": 0,
+            "reps": 10,
+            "distance_meters": 0,
+            "duration_seconds": null,
+            "rpe": null,
+            "custom_metric": null
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "26aabec0-b727-411f-a0a8-4d9c399cb30e",
     "title": "Lower (Volume)",
     "routine_id": "35ec598c-ed62-47b8-a614-355ccc628f04",
