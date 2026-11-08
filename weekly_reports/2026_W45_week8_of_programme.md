@@ -1,5 +1,5 @@
 # Weekly Training Report — Week 8 of 8
-**Generated: 07 November 2026** | Period: 2026-10-31 → 2026-11-07
+**Generated: 08 November 2026** | Period: 2026-11-01 → 2026-11-08
 *Hevy data: automatic ✅ | Nutrition + sleep: fill in at check-in*
 
 ---
@@ -9,18 +9,16 @@
 | Lift | W8 Target | Actual | Status |
 |---|---|---|---|
 | Bench Press (Heavy) ⭐ | 4×5 @ 72.5kg | ❌ Not logged | ❌ |
-| Weighted Pull Up (Heavy) ⭐ | 3×5 @ 10.0kg | 3×8 @ 10.0kg | ✅ |
+| Weighted Pull Up (Heavy) ⭐ | 3×5 @ 10.0kg | ❌ Not logged | ❌ |
 | Leg Press ⭐ | 4×10 @ 170.0kg | 3×10 @ 230.0kg | 🚀 |
 | Seated Leg Curl ⭐ | 3×12 @ 110.0kg | ❌ Not logged | ❌ |
 
-**Sessions completed:** 8/5 | **Total working sets:** 111 | ✅ On target
+**Sessions completed:** 6/5 | **Total working sets:** 77 | ❌ Below target
 
 ---
 
 ## 📋 Sessions This Week
 
-- **2026-11-01** — Warm up (0 min, 5 exercises)
-- **2026-11-01** — Upper (Heavy) (0 min, 8 exercises)
 - **2026-11-03** — Warm up (0 min, 5 exercises)
 - **2026-11-03** — Lower (Heavy) (0 min, 3 exercises)
 - **2026-11-06** — Warm up (0 min, 5 exercises)
@@ -75,14 +73,14 @@
 
 
 #### Triceps Dip
-| Date | Session | Target | Actual | Status | All Sets |
-|---|---|---|---|---|---|
-| 2026-11-01 | Upper (Heavy) | 3×12 @ 10.0kg | 3×20 @ BW | ❌ Weight 10.0kg short (0.0kg vs 10.0kg) | S1: BW×15 | S2: BW×20 | S3: BW×12 |
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×12 @ 10.0kg | Not logged | ❌ Missing |
 
 #### Triceps Pushdown
-| Date | Session | Target | Actual | Status | All Sets |
-|---|---|---|---|---|---|
-| 2026-11-01 | Upper (Heavy) | 3×12 @ 67.5kg | 3×15 @ 65.0kg | ❌ Weight 2.5kg short (65.0kg vs 67.5kg) | S1: 55.0kg×15 | S2: 65.0kg×12 | S3: 65.0kg×12 |
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×12 @ 67.5kg | Not logged | ❌ Missing |
 
 #### Single Arm Triceps Pushdown (Cable)
 | Session | Target | Actual | Status |
@@ -93,17 +91,15 @@
 
 
 #### Pull Up (Weighted) ⭐
-| Date | Session | Target | Actual | Status | All Sets |
-|---|---|---|---|---|---|
-| 2026-11-01 | Upper (Heavy) | 3×5 @ 10.0kg | 3×8 @ 10.0kg | ✅ Target hit | S1: 10.0kg×8 | S2: 10.0kg×6 | S3: 10.0kg×6 |
+| Session | Target | Actual | Status |
+|---|---|---|---|
+| — | 3×5 @ 10.0kg | Not logged | ❌ Missing |
 
 #### Pull Up
 > ⚠️ Drop sets after weighted — sub-maximal, never to failure
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-11-01 | Upper (Heavy) | 3×7 @ BW | 2×8 @ BW | ⚠️ Sets short: 2/3 | S1: BW×8 | S2: BW×5 |
-| 2026-11-01 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-11-03 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-11-06 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
 | 2026-11-07 | Warm up | 3×7 @ BW | 2×5 @ BW | ⚠️ Sets short: 2/3 | S1: BW×5 | S2: BW×5 |
@@ -228,7 +224,6 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-11-01 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-11-03 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-11-06 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
 | 2026-11-07 | Warm up | 2×40s @ BW | 2×0 @ BW | ✅ Target hit | S1: 20s | S2: 20s |
@@ -238,7 +233,6 @@
 
 | Date | Session | Target | Actual | Status | All Sets |
 |---|---|---|---|---|---|
-| 2026-11-01 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-11-03 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-11-06 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
 | 2026-11-07 | Warm up | 2×5 @ BW | 2×5 @ BW | ✅ Target hit | S1: BW×5 | S2: BW×5 |
@@ -260,10 +254,6 @@
 - **Triceps Rope Pushdown**: 3 working sets, best 55.0kg × 12 reps
 - **Rope Cable Curl**: 3 working sets, best 55.0kg × 12 reps
 - **Romanian Deadlift (Barbell)**: 3 working sets, best 50.0kg × 12 reps
-- **Incline Bench Press (Barbell)**: 4 working sets, best 60.0kg × 10 reps
-- **Seated Cable Row - V Grip (Cable)**: 3 working sets, best 70.0kg × 12 reps
-- **Seated Shoulder Press (Machine)**: 3 working sets, best 55.0kg × 8 reps
-- **Preacher Curl (Barbell)**: 3 working sets, best 27.5kg × 11 reps
 
 ---
 
@@ -300,4 +290,4 @@
 
 ---
 
-*Auto-generated: 2026-11-07 15:13 UTC | Source: Hevy API*
+*Auto-generated: 2026-11-08 23:19 UTC | Source: Hevy API*
